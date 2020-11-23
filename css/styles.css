@@ -37,7 +37,7 @@ h2 {
 
 .navbar_header {
     padding: 100px 0 300px 0;
-    background-color: grey;
+    background: url("../img/sunset1.jpg") no-repeat fixed center;
 }
 
 .navbar img {
@@ -64,8 +64,9 @@ nav {
 }
 
 section {
-    margin: 300px 0;
+    margin: 150px 0;
 }
+
 
 .portfolio-item {
     width: 30%;
