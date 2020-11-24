@@ -12,12 +12,12 @@
 <body>
 
     <header>
-        <div class="navbar">
-            <a href="">
+        <div class="header-navbar">
+            <a href="index.html">
                 <img src="img/logo.png" alt="logo">
             </a>
             <nav>
-                <ul class="navbar_links">
+                <ul class="navbar-links">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -32,16 +32,19 @@
                     </li>                        
                 </ul>                    
             </nav>
-                <a href="">Light/Dark mode</a>
-                <a href="">SHOP NOW</a>
+            <div class="toggle-btn">
+                <input type="checkbox" id="switch" name="theme" />
+                <label for="switch">Toggle</label>
+            </div>
+            <a href="shop.html">SHOP NOW</a>
         </div>    
-            <div class="navbar_header">
+            <div class="header">
                 <div class="container">
                     <p>Cupcake ipsum dolor. Sit amet chocolate bar.</p>
                     <h1>Pastry biscuit I love tiramisu.</h1>
                 </div>                
             </div>
-            <div class="navbar_shop">
+            <div class="header-shop">
                 <div class="container">
                     <p>Tootsie roll I love chocolate bar donut.</p>
                     <a href="">SHOP NOW</a>
@@ -50,34 +53,28 @@
     </header>
 
     <main>
-
         <section class="contact">
             <div class="container">
                 <h2>Contact</h2>
-                <div class="contact_wrapper">
-                    <div class="contact_content">
-                        <div class="contact_item">
+                <div class="contact-wrapper">
+                    <div class="contact-content">
+                        <div class="contact-item">
                             <h4>Adress</h4>
-                            <p>4509 birdie dr
-                            <br>
-                            California
-                            </p>
+                            <p>4509 birdie dr</p>
+                            <p>California</p>
                         </div>
-                        <div class="contact_item">
+                        <div class="contact-item">
                             <h4>Contact</h4>
                             <a href="tel:111222333">111222333</a>
                             <a href="mailto:contact@gmail.com">contact@gmail.com</a>
                         </div>
-                        <div class="contact_item">
+                        <div class="contact-item">
                             <h4>Working hours</h4>
-                            <p>Mo-Fr
-                            <br>
-                            8:00 - 18:00
-                            </p>
+                            <p>Mo-Fr</p>
+                            <p>8:00 - 18:00</p>
                         </div>
                     </div>
-
-                    <div class="contact_content">
+                    <div class="contact-content">
                         <div class="form">
                             <form action="#" class="contact-form">
                                 <label for="your-name">
@@ -93,60 +90,70 @@
                                 <label for="your-message">
                                     Your message
                                     <textarea id="your-message" name="your-message" cols="40" rows="10"></textarea>
-                                </label>
-        
+                                </label>        
                                 <button class="btn btn-white">Send</button>
                             </form>
                         </div>
                     </div>
                 </div>
+                <div class="contact-phone">
+                    <h3>Tell us</h3>
+                    <a href="tel:111222333">+421 111 222 333</a>
+                </div>
                 <div class="map" style="height: 100px; background-color: grey;">
                 map
                 </div>
-        </div>        
+            </div>        
         </section>
 
     </main>
 
     <footer>
         <div class="container">
-            <div class="footer_wrapper">
-                <div class="footer_item">
+            <div class="footer-wrapper">
+                <div class="footer-item">
                     <h4>Navigation</h4>
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="">Portfolio</a>
+                            <a href="portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer_item">
+                <div class="footer-item">
                     <h4>Contact</h4>
                     <ul>
                         <li>
-                            503548979
+                            <a href="tel:111222333">
+                                <i class="fas fa-phone"></i>
+                                111222333
+                            </a>
                         </li>
                         <li>
-                            contact@gmail.com
+                            <a href="mailto:contact@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                                contact@gmail.com
+                            </a> 
                         </li>
                     </ul>                
                 </div>
-                <div class="footer_item">
+                <div class="footer-item">
                     <h4>Shop now</h4>
                     <a href="">Go to our eshop</a>               
                 </div>
-                <div class="footer_item">
+                <div class="footer-item">
                     <h4>Adress</h4>
                     <ul>
                         <li>
+                            <i class="fas fa-map-marker-alt"></i>
                             4509 birdie dr
                         </li>
                         <li>
@@ -156,7 +163,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
     
 </body>

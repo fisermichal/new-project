@@ -12,12 +12,12 @@
 <body>
 
     <header>
-        <div class="navbar">
-            <a href="">
+        <div class="header-navbar">
+            <a href="index.html">
                 <img src="img/logo.png" alt="logo">
             </a>
             <nav>
-                <ul class="navbar_links">
+                <ul class="navbar-links">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -32,16 +32,19 @@
                     </li>                        
                 </ul>                    
             </nav>
-                <a href="">Light/Dark mode</a>
-                <a href="">SHOP NOW</a>
+            <div class="toggle-btn">
+                <input type="checkbox" id="switch" name="theme" />
+                <label for="switch">Toggle</label>
+            </div>
+            <a href="shop.html">SHOP NOW</a>
         </div>    
-            <div class="navbar_header">
+            <div class="header">
                 <div class="container">
                     <p>Cupcake ipsum dolor. Sit amet chocolate bar.</p>
                     <h1>Pastry biscuit I love tiramisu.</h1>
                 </div>                
             </div>
-            <div class="navbar_shop">
+            <div class="header-shop">
                 <div class="container">
                     <p>Tootsie roll I love chocolate bar donut.</p>
                     <a href="">SHOP NOW</a>
@@ -60,14 +63,14 @@
                     Sweet roll gummi bears dessert candy macaroon. Sweet roll cupcake 
                     macaroon dragée wafer powder jelly beans. Soufflé powder candy carrot 
                     cake danish oat cake biscuit biscuit cookie.
-                <br>
-                <br>          
+                </p>
+                <p>          
                     Toffee tootsie roll ice cream cake. Chocolate bar halvah brownie apple pie
                     cupcake jelly-o candy canes cookie candy canes. Carrot cake dessert biscuit
                     lemon drops. Gingerbread sweet roll pudding. Tart jelly beans gummies muffin
                     chupa chups soufflé gingerbread apple pie gummi bears.
-                <br>
-                <br>            
+                </p>
+                <p>            
                     Jelly-o gummi bears danish chocolate cake jelly-o cupcake. Liquorice apple
                     pie candy canes. Carrot cake croissant caramels candy cookie cake donut
                     marzipan lemon drops. Chocolate carrot cake halvah lollipop tart lemon
@@ -76,34 +79,67 @@
             </div>            
         </section>
 
-        <section class="whatwedo">
+        <section class="what-we-do">
             <div class="container">
                 <h2>What we do</h2>
                 <ul>
                     <li>
-                        <i class="fab fa-accusoft"></i>
+                        <i class="fab fa-accusoft fa-4x"></i>
                         <p>Lollipop liquorice muffin candy</p>
                     </li>
                     <li>
-                        <i class="fab fa-affiliatetheme"></i>
+                        <i class="fab fa-affiliatetheme fa-4x"></i>
                         <p>candy canes marzipan pastry</p>
                     </li>
                     <li>
-                        <i class="fab fa-buffer"></i>
+                        <i class="fab fa-centercode fa-4x"></i>
                         <p>Sweet roll gummi bears dessert</p>
                     </li>
                     <li>
-                        <i class="fab fa-artstation"></i>
+                        <i class="fab fa-ethereum fa-4x"></i>
                         <p>Soufflé powder candy carrot 
                             cake</p>
                     </li>
                     <li>
-                        <i class="fab fa-audible"></i>
+                        <i class="fab fa-audible fa-4x"></i>
                         <p>Toffee tootsie roll ice cream cake</p>
                     </li>
                     <li>
-                        <i class="fab fa-battle-net"></i>
+                        <i class="fab fa-modx fa-4x"></i>
                         <p>Chocolate bar icing tart powder pie</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="standarts">
+            <div class="container">
+                <h2>Our standarts</h2>
+                <p>Topping sweet apple pie pastry sugar plum apple pie fruitcake. 
+                    Liquorice danish caramels sweet roll sweet roll jujubes sweet 
+                    brownie bear claw. Candy canes tiramisu gummi bears bear claw 
+                    jelly-o powder.
+                </p>
+                <ul>
+                    <li>
+                        <i class="fab fa-asymmetrik fa-4x"></i>
+                        <h4>Marshmallow oat</h4>
+                        <p>Dessert jujubes sweet roll gummies croissant sweet roll.</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-digital-ocean fa-4x"></i>
+                        <h4>Jelly beans</h4>
+                        <p>Biscuit carrot cake cupcake pastry chocolate gummi bears candy.</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-bity fa-4x"></i>
+                        <h4>Topping sweet</h4>
+                        <p>Candy canes tiramisu gummi bears bear claw jelly-o powder.</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-uikit fa-4x"></i>
+                        <h4>Lemon drops</h4>
+                        <p>Cake tiramisu candy canes marshmallow dragée marshmallow muffin.</p>
                     </li>
                 </ul>
             </div>
@@ -113,43 +149,50 @@
 
     <footer>
         <div class="container">
-            <div class="footer_wrapper">
-                <div class="footer_item">
+            <div class="footer-wrapper">
+                <div class="footer-item">
                     <h4>Navigation</h4>
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="">Portfolio</a>
+                            <a href="portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer_item">
+                <div class="footer-item">
                     <h4>Contact</h4>
                     <ul>
                         <li>
-                            503548979
+                            <a href="tel:111222333">
+                                <i class="fas fa-phone"></i>
+                                111222333
+                            </a>
                         </li>
                         <li>
-                            contact@gmail.com
+                            <a href="mailto:contact@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                                contact@gmail.com
+                            </a> 
                         </li>
                     </ul>                
                 </div>
-                <div class="footer_item">
+                <div class="footer-item">
                     <h4>Shop now</h4>
                     <a href="">Go to our eshop</a>               
                 </div>
-                <div class="footer_item">
+                <div class="footer-item">
                     <h4>Adress</h4>
                     <ul>
                         <li>
+                            <i class="fas fa-map-marker-alt"></i>
                             4509 birdie dr
                         </li>
                         <li>
@@ -159,7 +202,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
     
 </body>
