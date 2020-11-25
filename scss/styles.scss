@@ -3,8 +3,8 @@
 // ------------------------------------------------------ /
 
 
-@import 'general';        // global rules
 @import 'variables';      // variables
+@import 'general';        // global rules
 @import 'typography';     // font n stuff
 @import 'buttons';        // buttons
 @import 'mixins';         // functions and mixins
@@ -12,8 +12,8 @@
 @import 'footer';         // footer
 
 
-@import 'home';
-@import 'about';
-@import 'portfolio';
-@import 'contact';
-@import 'shop';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/portfolio';
+@import 'pages/contact';
+@import 'pages/shop';

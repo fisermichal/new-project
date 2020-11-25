@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: black;
+  background: white;
+  font-size: 1.3em;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal; }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle; }
+
+.menu {
+  list-style: none; }
+  .menu li {
+    display: inline-block; }
+  .menu a {
+    padding: 0 16px; }
+
+h1, h2, h3, h4 {
+  line-height: 1; }
+
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 40px; }
+
+h3 {
+  font-size: 30px; }
+
+h4 {
+  font-size: 20px; }
+
+.header-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px 0; }
+
+.toggle-btn input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden; }
+.toggle-btn label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: darkgrey;
+  float: right;
+  border-radius: 100px;
+  position: relative; }
+.toggle-btn label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 90px;
+  transition: 0.3s; }
+.toggle-btn input:checked + label {
+  background: grey; }
+.toggle-btn input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%); }
+.toggle-btn label:active:after {
+  width: 45px; }
+
+.shop-btn {
+  border: 1px solid black;
+  padding: 10px 48px;
+  border-radius: 5px; }
+
+.header {
+  background: url("../img/sunset1.jpg") no-repeat fixed center;
+  padding: 100px 0 300px 0; }
+  .header p {
+    margin-bottom: 20px; }
+
+.header-shop {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto 100px;
+  padding: 16px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  transform: translateY(-38px); }
+  .header-shop p {
+    display: inline-block; }
+  .header-shop a {
+    padding: 5px 20px;
+    border: 1px solid black; }
+
+/*# sourceMappingURL=styles.css.map */
