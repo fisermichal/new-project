@@ -6,7 +6,7 @@
 body {
   color: black;
   background: white;
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: "Poppins", sans-serif;
   font-weight: normal; }
 
@@ -34,10 +34,17 @@ h1, h2, h3, h4 {
   line-height: 1; }
 
 h1 {
-  font-size: 50px; }
+  font-size: 60px; }
 
 h2 {
-  font-size: 40px; }
+  font-size: 50px;
+  margin: 30px 0; }
+
+h2::before {
+  content: url(../img/tecky.png);
+  position: absolute;
+  z-index: -999;
+  transform: translate(-20px, -15px); }
 
 h3 {
   font-size: 30px; }
@@ -109,5 +116,34 @@ h4 {
   .header-shop a {
     padding: 5px 20px;
     border: 1px solid black; }
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px; }
+
+.footer-item {
+  width: 15%; }
+  .footer-item li {
+    display: block;
+    padding-bottom: 5px; }
+  .footer-item a {
+    padding: 0; }
+  .footer-item h4 {
+    margin-bottom: 10px; }
+  .footer-item svg {
+    margin-right: 5px; }
+
+.about p {
+  width: 40%;
+  margin-bottom: 20px; }
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.portfolio-item {
+  width: 33%; }
 
 /*# sourceMappingURL=styles.css.map */
