@@ -6,7 +6,7 @@
 body {
   color: black;
   background: white;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Poppins", sans-serif;
   font-weight: normal; }
 
@@ -14,9 +14,13 @@ body {
   max-width: 1400px;
   margin: 0 auto; }
 
+.center {
+  text-align: center; }
+
 a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  display: inline-block; }
 
 img {
   width: 100%;
@@ -30,11 +34,15 @@ img {
   .menu a {
     padding: 0 16px; }
 
+section {
+  margin: 100px 0; }
+
 h1, h2, h3, h4 {
   line-height: 1; }
 
 h1 {
-  font-size: 60px; }
+  font-size: 60px;
+  color: #38b6ff; }
 
 h2 {
   font-size: 50px;
@@ -78,7 +86,7 @@ h4 {
   left: 3px;
   width: 20px;
   height: 20px;
-  background: white;
+  background-color: white;
   border-radius: 90px;
   transition: 0.3s; }
 .toggle-btn input:checked + label {
@@ -90,15 +98,17 @@ h4 {
   width: 45px; }
 
 .shop-btn {
-  border: 1px solid black;
+  border: 1px solid #38b6ff;
   padding: 10px 48px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: #38b6ff; }
 
 .header {
-  background: url("../img/sunset1.jpg") no-repeat fixed center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sunset1.jpg") no-repeat fixed center;
   padding: 100px 0 300px 0; }
   .header p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    color: white; }
 
 .header-shop {
   width: 40%;
@@ -110,12 +120,16 @@ h4 {
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
-  transform: translateY(-38px); }
+  transform: translateY(-38px);
+  background-color: #38b6ff;
+  color: white; }
   .header-shop p {
-    display: inline-block; }
+    display: inline-block;
+    font-weight: bold; }
   .header-shop a {
     padding: 5px 20px;
-    border: 1px solid black; }
+    border: 1px solid white;
+    color: white; }
 
 .footer-wrapper {
   display: flex;
@@ -136,14 +150,95 @@ h4 {
 
 .about p {
   width: 40%;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
+
+.portfolio h3 {
+  margin: 20px 0 20px 25px; }
 
 .portfolio-wrapper {
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  justify-content: space-around; }
 
 .portfolio-item {
-  width: 33%; }
+  width: 30%; }
+  .portfolio-item img {
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+
+.portfolio-item-text {
+  padding-left: 10%;
+  padding-right: 10%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+  .portfolio-item-text h4 {
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  .portfolio-item-text a {
+    margin: 20px 0; }
+
+.portfolio-footer {
+  margin-top: 100px;
+  height: 250px;
+  background: url(../img/sunset2.jpg) no-repeat fixed center;
+  text-align: center;
+  padding: 50px; }
+  .portfolio-footer h3 {
+    color: white; }
+  .portfolio-footer a {
+    padding: 10px 48px;
+    margin: 20px 0;
+    color: white;
+    background-color: #38b6ff;
+    border-radius: 5px; }
+
+.contact {
+  margin-bottom: 300px; }
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-around; }
+
+.contact-content {
+  width: 30%; }
+
+.contact-content:first-child {
+  color: white;
+  background-color: #38b6ff;
+  border-radius: 5px;
+  padding: 50px; }
+  .contact-content:first-child a {
+    color: white;
+    display: block; }
+
+.contact-item h4 {
+  margin: 10px 0; }
+
+input, textarea {
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
+  font-size: 20px; }
+
+.contact-form button {
+  border: 1px solid #38b6ff;
+  padding: 10px 48px;
+  border-radius: 5px;
+  color: #38b6ff;
+  background-color: white;
+  font-size: 20px; }
+
+footer {
+  background-color: lightgrey; }
+  footer .map {
+    transform: translateY(-200px); }
+  footer .footer-wrapper {
+    margin-top: -150px;
+    padding-bottom: 100px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,16 +5,118 @@
 .about {
     p {
     width: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     }
+}
+
+.portfolio h3 {
+    margin: 20px 0 20px 25px;
 }
 
 .portfolio-wrapper {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .portfolio-item {
-    width: 33%;
+    width: 30%;
+    img {
+        height: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+}
+
+.portfolio-item-text {
+    padding-left: 10%;
+    padding-right: 10%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    h4 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    a {
+        margin: 20px 0;
+    }
+}
+
+
+.portfolio-footer {
+    margin-top: 100px;
+    height: 250px;
+    background: url(../img/sunset2.jpg) no-repeat fixed center;
+    text-align: center;
+    padding: 50px;
+    h3 {
+        color: white;
+    }
+    a {
+        padding: 10px 48px;
+        margin: 20px 0;
+        color: white;
+        background-color: #38b6ff;
+        border-radius: 5px;
+    }
+}
+
+.contact {
+    margin-bottom: 300px;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-content {
+    width: 30%;
+}
+
+.contact-content:first-child {
+    color: white;
+    background-color: #38b6ff;
+    border-radius: 5px;
+    padding: 50px;
+    a {
+        color: white;
+        display: block;
+    }
+}
+
+.contact-item h4 {
+    margin: 10px 0;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.contact-form button {
+        border: 1px solid #38b6ff;
+        padding: 10px 48px;
+        border-radius: 5px;
+        color: #38b6ff;
+        background-color: white;
+        font-size: 20px;
+}
+
+footer {
+    background-color: lightgrey;
+    .map {
+        transform: translateY(-200px);
+    }
+    .footer-wrapper {
+        margin-top: -150px;
+        padding-bottom: 100px;
+    }
 }

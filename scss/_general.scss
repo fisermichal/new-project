@@ -24,9 +24,14 @@ body {
     margin: 0 auto;
 }
 
+.center {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color: $color-text;
+    display: inline-block;
 }
 
 img {
@@ -43,5 +48,9 @@ img {
     a {
         padding: 0 16px;
     }
+}
+
+section {
+    margin: 100px 0;
 }
 

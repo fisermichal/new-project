@@ -34,7 +34,7 @@
         left: 3px;
         width: 20px;
         height: 20px;
-        background: white;
+        background-color: white;
         border-radius: 90px;
         transition: 0.3s;
     }
@@ -54,16 +54,18 @@
 }
 
 .shop-btn {
-    border: 1px solid black;
+    border: 1px solid #38b6ff;
     padding: 10px 48px;
     border-radius: 5px;
+    color: #38b6ff;
 }
 
 .header {
-    background: url("../img/sunset1.jpg") no-repeat fixed center;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../img/sunset1.jpg") no-repeat fixed center;
     padding: 100px 0 300px 0;
     p {
         margin-bottom: 20px;
+        color: white;
     }
 }
 
@@ -78,11 +80,15 @@
     align-items: center;
     border-radius: 5px;
     transform: translateY(-38px);
+    background-color: #38b6ff;
+    color: white;
     p {
         display: inline-block;
+        font-weight: bold;
     }
     a {
         padding: 5px 20px;
-        border: 1px solid black;
+        border: 1px solid white;
+        color: white;
     }
 }
