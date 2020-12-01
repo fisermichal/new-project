@@ -2,6 +2,36 @@
 //	PORTFOLIO
 // ------------------------------------------------------ /
 
-main {
-    margin-bottom: 300px;
+.portfolio {
+    p {
+        width: 50%;
+        margin: 20px 0 20px 50px;
+    }
+}
+
+.portfolio-wrapper {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.portfolio-item {
+    margin: 50px 0;
+    h3 {
+        margin-left: 30px;
+    }
+
+    h3::before {
+        content: url(../img/ctverec.png);
+	    position: absolute;
+	    z-index: -999;
+	    transform: translate(-22px, -13px);
+    }
+}
+
+.portfolio-images {
+    margin-left: 45px;
+    img {
+        border-radius: 10px;
+        margin: 0 5px;
+    }
 }

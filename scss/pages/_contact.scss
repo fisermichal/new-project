@@ -1,3 +1,23 @@
 //
 //	CONTACT
 // ------------------------------------------------------ /
+
+.contact-phone {
+    h3 {
+        margin: 100px 0 50px 155px;
+    }
+    a {
+        margin-left: 200px;
+        font: {
+            size: 70px;
+            weight: bold;
+        }
+        color: #38b6ff;
+    }
+    h3::before {
+        content: url(../img/ctverec.png);
+	    position: absolute;
+	    z-index: -999;
+	    transform: translate(-22px, -13px);
+    }
+}

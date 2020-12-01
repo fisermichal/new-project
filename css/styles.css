@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0; }
 
+main {
+  margin-bottom: 300px; }
+
 body {
   color: black;
   background: white;
@@ -104,7 +107,7 @@ h4 {
   color: #38b6ff; }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sunset1.jpg") no-repeat fixed center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/sunset1.jpg") no-repeat fixed center;
   padding: 100px 0 300px 0; }
   .header p {
     margin-bottom: 20px;
@@ -148,45 +151,56 @@ h4 {
   .footer-item svg {
     margin-right: 5px; }
 
+footer {
+  background-color: lightgrey; }
+  footer .map {
+    transform: translateY(-200px); }
+  footer .footer-wrapper {
+    margin-top: -150px;
+    padding-bottom: 100px; }
+
 .about p {
   width: 40%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-left: 30px; }
+.about a {
+  margin-left: 30px; }
 
-.portfolio h3 {
+.home-portfolio h3 {
   margin: 20px 0 20px 25px; }
 
-.portfolio-wrapper {
+.home-portfolio-wrapper {
   display: flex;
   justify-content: space-around; }
 
-.portfolio-item {
+.home-portfolio-item {
   width: 30%; }
-  .portfolio-item img {
+  .home-portfolio-item img {
     height: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; }
 
-.portfolio-item-text {
+.home-portfolio-item-text {
   padding-left: 10%;
   padding-right: 10%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0px 1px 10px 0px lightgrey; }
-  .portfolio-item-text h4 {
+  .home-portfolio-item-text h4 {
     padding-bottom: 20px;
     padding-top: 20px; }
-  .portfolio-item-text a {
+  .home-portfolio-item-text a {
     margin: 20px 0; }
 
-.portfolio-footer {
+.home-portfolio-footer {
   margin-top: 100px;
   height: 250px;
   background: url(../img/sunset2.jpg) no-repeat fixed center;
   text-align: center;
   padding: 50px; }
-  .portfolio-footer h3 {
+  .home-portfolio-footer h3 {
     color: white; }
-  .portfolio-footer a {
+  .home-portfolio-footer a {
     padding: 10px 48px;
     margin: 20px 0;
     color: white;
@@ -220,7 +234,12 @@ input, textarea {
   border-radius: 10px;
   margin: 10px 0;
   padding: 20px;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: "Poppins", sans-serif; }
+
+input:focus,
+textarea:focus {
+  outline-color: #38b6ff; }
 
 .contact-form button {
   border: 1px solid #38b6ff;
@@ -229,14 +248,6 @@ input, textarea {
   color: #38b6ff;
   background-color: white;
   font-size: 20px; }
-
-footer {
-  background-color: lightgrey; }
-  footer .map {
-    transform: translateY(-200px); }
-  footer .footer-wrapper {
-    margin-top: -150px;
-    padding-bottom: 100px; }
 
 .what-we-do .menu {
   text-align: center; }
@@ -269,7 +280,7 @@ footer {
     align-items: center;
     box-shadow: 0px 2px 3px 0px lightgrey;
     border-radius: 10px;
-    margin: 15px 0; }
+    margin: 30px 0; }
   .standarts-wrapper svg {
     margin: 10px 30px;
     color: #38b6ff; }
@@ -280,7 +291,41 @@ footer {
 .menu-text p {
   width: 100%; }
 
-main {
-  margin-bottom: 300px; }
+.portfolio p {
+  width: 50%;
+  margin: 20px 0 20px 50px; }
+
+.portfolio-wrapper {
+  margin-top: 100px;
+  margin-left: 100px; }
+
+.portfolio-item {
+  margin: 50px 0; }
+  .portfolio-item h3 {
+    margin-left: 30px; }
+  .portfolio-item h3::before {
+    content: url(../img/ctverec.png);
+    position: absolute;
+    z-index: -999;
+    transform: translate(-22px, -13px); }
+
+.portfolio-images {
+  margin-left: 45px; }
+  .portfolio-images img {
+    border-radius: 10px;
+    margin: 0 5px; }
+
+.contact-phone h3 {
+  margin: 100px 0 50px 155px; }
+.contact-phone a {
+  margin-left: 200px;
+  font-size: 70px;
+  font-weight: bold;
+  color: #38b6ff; }
+.contact-phone h3::before {
+  content: url(../img/ctverec.png);
+  position: absolute;
+  z-index: -999;
+  transform: translate(-22px, -13px); }
 
 /*# sourceMappingURL=styles.css.map */
