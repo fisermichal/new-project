@@ -12,7 +12,7 @@
             size: 70px;
             weight: bold;
         }
-        color: #38b6ff;
+        color: $color-primary;
     }
     h3::before {
         content: url(../img/ctverec.png);

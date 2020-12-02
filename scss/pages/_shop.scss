@@ -1,3 +1,55 @@
 //
 //	SHOP
 // ------------------------------------------------------ /
+
+
+.products > .container > p {
+    margin-left: 50px;
+    width: 40%;
+}
+
+.products-wrapper {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.products-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    li {
+        display: block;
+        position: relative;
+        margin-left: 20px;
+    }
+    li::before {
+        content: "\2022";
+        color: $color-primary;
+        margin-right: 10px;
+        font-size: 40px;
+        position: absolute;
+        top: -15px;
+        left: -20px;
+    }
+    a {
+        margin-top: 30px;
+    }
+}
+
+.products-item > p {
+    margin: 10px 0;
+}
+
+.products-item-text,
+.products-item-image {
+    display: inline-block;
+    width: 40%;
+}
+
+.products-item-text p {
+    margin: 10px 0;
+}
+
+.products-item-image img {
+    border-radius: 10px;
+}

@@ -21,7 +21,7 @@
         text-indent: -9999px;
         width: 52px;
         height: 27px;
-        background: darkgrey;
+        background: $color-bg-footer;
         float: right;
         border-radius: 100px;
         position: relative;
@@ -34,13 +34,13 @@
         left: 3px;
         width: 20px;
         height: 20px;
-        background-color: white;
+        background-color: $color-bg-body;
         border-radius: 90px;
         transition: 0.3s;
     }
     
     input:checked + label {
-        background: grey;
+        background: $color-primary;
     }
     
     input:checked + label:after {
@@ -54,10 +54,10 @@
 }
 
 .shop-btn {
-    border: 1px solid #38b6ff;
+    border: 1px solid $color-primary;
     padding: 10px 48px;
     border-radius: 5px;
-    color: #38b6ff;
+    color: $color-primary;
 }
 
 .header {
@@ -65,7 +65,7 @@
     padding: 100px 0 300px 0;
     p {
         margin-bottom: 20px;
-        color: white;
+        color: $color-bg-body;
     }
 }
 
@@ -74,21 +74,20 @@
     text-align: center;
     margin: 0 auto 100px;
     padding: 16px;
-    background-color: grey;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 5px;
     transform: translateY(-38px);
-    background-color: #38b6ff;
-    color: white;
+    background-color: $color-primary;
+    color: $color-bg-body;
     p {
         display: inline-block;
         font-weight: bold;
     }
     a {
         padding: 5px 20px;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid $color-bg-body;
+        color: $color-bg-body;
     }
 }

@@ -14,7 +14,7 @@ main {
 }
 
 body {
-    color: $color-text;
+    color: $color-secondary;
     background: $color-bg-body;
     font: {
         size: $font-size;
@@ -34,7 +34,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $color-text;
+    color: $color-secondary;
     display: inline-block;
 }
 

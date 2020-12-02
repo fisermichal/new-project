@@ -37,7 +37,7 @@
     padding-right: 10%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0px 1px 10px 0px lightgrey;
+    box-shadow: 0px 1px 10px 0px $color-bg-footer;
     h4 {
         padding-bottom: 20px;
         padding-top: 20px;
@@ -55,13 +55,13 @@
     text-align: center;
     padding: 50px;
     h3 {
-        color: white;
+        color: $color-bg-body;
     }
     a {
         padding: 10px 48px;
         margin: 20px 0;
-        color: white;
-        background-color: #38b6ff;
+        color: $color-bg-body;
+        background-color: $color-primary;
         border-radius: 5px;
     }
 }
@@ -76,13 +76,13 @@
 }
 
 .contact-content:first-child {
-    color: white;
-    background-color: #38b6ff;
+    color: $color-bg-body;
+    background-color: $color-primary;
     border-radius: 5px;
     padding: 50px;
     width: 25%;
     a {
-        color: white;
+        color: $color-bg-body;
         display: block;
     }
 }
@@ -104,15 +104,15 @@ input, textarea {
 
 input:focus,
 textarea:focus {
-    outline-color: #38b6ff;
+    outline-color: $color-primary;
 }
 
 .contact-form button {
-        border: 1px solid #38b6ff;
+        border: 1px solid $color-primary;
         padding: 10px 48px;
         border-radius: 5px;
-        color: #38b6ff;
-        background-color: white;
+        color: $color-primary;
+        background-color: $color-bg-body;
         font-size: 20px;
 }
 

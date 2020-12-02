@@ -7,8 +7,8 @@ main {
   margin-bottom: 300px; }
 
 body {
-  color: black;
-  background: white;
+  color: #000000;
+  background: #FCFCFC;
   font-size: 1.2em;
   font-family: "Poppins", sans-serif;
   font-weight: normal; }
@@ -22,7 +22,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   display: inline-block; }
 
 img {
@@ -45,7 +45,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 60px;
-  color: #38b6ff; }
+  color: #0097ef; }
 
 h2 {
   font-size: 50px;
@@ -78,7 +78,7 @@ h4 {
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: darkgrey;
+  background: #a9a9a9;
   float: right;
   border-radius: 100px;
   position: relative; }
@@ -89,11 +89,11 @@ h4 {
   left: 3px;
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: #FCFCFC;
   border-radius: 90px;
   transition: 0.3s; }
 .toggle-btn input:checked + label {
-  background: grey; }
+  background: #0097ef; }
 .toggle-btn input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%); }
@@ -101,38 +101,37 @@ h4 {
   width: 45px; }
 
 .shop-btn {
-  border: 1px solid #38b6ff;
+  border: 1px solid #0097ef;
   padding: 10px 48px;
   border-radius: 5px;
-  color: #38b6ff; }
+  color: #0097ef; }
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/sunset1.jpg") no-repeat fixed center;
   padding: 100px 0 300px 0; }
   .header p {
     margin-bottom: 20px;
-    color: white; }
+    color: #FCFCFC; }
 
 .header-shop {
   width: 40%;
   text-align: center;
   margin: 0 auto 100px;
   padding: 16px;
-  background-color: grey;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
   transform: translateY(-38px);
-  background-color: #38b6ff;
-  color: white; }
+  background-color: #0097ef;
+  color: #FCFCFC; }
   .header-shop p {
     display: inline-block;
     font-weight: bold; }
   .header-shop a {
     padding: 5px 20px;
-    border: 1px solid white;
-    color: white; }
+    border: 1px solid #FCFCFC;
+    color: #FCFCFC; }
 
 .footer-wrapper {
   display: flex;
@@ -152,7 +151,7 @@ h4 {
     margin-right: 5px; }
 
 footer {
-  background-color: lightgrey; }
+  background-color: #a9a9a9; }
   footer .map {
     transform: translateY(-200px); }
   footer .footer-wrapper {
@@ -185,7 +184,7 @@ footer {
   padding-right: 10%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 0px 1px 10px 0px lightgrey; }
+  box-shadow: 0px 1px 10px 0px #a9a9a9; }
   .home-portfolio-item-text h4 {
     padding-bottom: 20px;
     padding-top: 20px; }
@@ -199,12 +198,12 @@ footer {
   text-align: center;
   padding: 50px; }
   .home-portfolio-footer h3 {
-    color: white; }
+    color: #FCFCFC; }
   .home-portfolio-footer a {
     padding: 10px 48px;
     margin: 20px 0;
-    color: white;
-    background-color: #38b6ff;
+    color: #FCFCFC;
+    background-color: #0097ef;
     border-radius: 5px; }
 
 .contact-wrapper {
@@ -215,13 +214,13 @@ footer {
   width: 30%; }
 
 .contact-content:first-child {
-  color: white;
-  background-color: #38b6ff;
+  color: #FCFCFC;
+  background-color: #0097ef;
   border-radius: 5px;
   padding: 50px;
   width: 25%; }
   .contact-content:first-child a {
-    color: white;
+    color: #FCFCFC;
     display: block; }
 
 .contact-item h4 {
@@ -239,14 +238,14 @@ input, textarea {
 
 input:focus,
 textarea:focus {
-  outline-color: #38b6ff; }
+  outline-color: #0097ef; }
 
 .contact-form button {
-  border: 1px solid #38b6ff;
+  border: 1px solid #0097ef;
   padding: 10px 48px;
   border-radius: 5px;
-  color: #38b6ff;
-  background-color: white;
+  color: #0097ef;
+  background-color: #FCFCFC;
   font-size: 20px; }
 
 .what-we-do .menu {
@@ -256,15 +255,15 @@ textarea:focus {
   text-align: center;
   padding: 70px;
   margin: 10px;
-  box-shadow: 0px 2px 3px 0px lightgrey;
+  box-shadow: 0px 2px 3px 0px #a9a9a9;
   border-radius: 10px; }
 .what-we-do p {
   margin-top: 30px; }
 .what-we-do .light {
-  color: #38b6ff; }
+  color: #0097ef; }
 .what-we-do .blue {
-  background-color: #38b6ff;
-  color: white; }
+  background-color: #0097ef;
+  color: #FCFCFC; }
 
 .standarts li {
   display: block; }
@@ -278,14 +277,14 @@ textarea:focus {
   .standarts-wrapper li {
     display: flex;
     align-items: center;
-    box-shadow: 0px 2px 3px 0px lightgrey;
+    box-shadow: 0px 2px 3px 0px #a9a9a9;
     border-radius: 10px;
     margin: 30px 0; }
   .standarts-wrapper svg {
     margin: 10px 30px;
-    color: #38b6ff; }
+    color: #0097ef; }
   .standarts-wrapper h4 {
-    color: #38b6ff;
+    color: #0097ef;
     margin-bottom: 10px; }
 
 .menu-text p {
@@ -321,11 +320,52 @@ textarea:focus {
   margin-left: 200px;
   font-size: 70px;
   font-weight: bold;
-  color: #38b6ff; }
+  color: #0097ef; }
 .contact-phone h3::before {
   content: url(../img/ctverec.png);
   position: absolute;
   z-index: -999;
   transform: translate(-22px, -13px); }
+
+.products > .container > p {
+  margin-left: 50px;
+  width: 40%; }
+
+.products-wrapper {
+  margin-left: 50px;
+  margin-top: 40px; }
+
+.products-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0; }
+  .products-item li {
+    display: block;
+    position: relative;
+    margin-left: 20px; }
+  .products-item li::before {
+    content: "\2022";
+    color: #0097ef;
+    margin-right: 10px;
+    font-size: 40px;
+    position: absolute;
+    top: -15px;
+    left: -20px; }
+  .products-item a {
+    margin-top: 30px; }
+
+.products-item > p {
+  margin: 10px 0; }
+
+.products-item-text,
+.products-item-image {
+  display: inline-block;
+  width: 40%; }
+
+.products-item-text p {
+  margin: 10px 0; }
+
+.products-item-image img {
+  border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
