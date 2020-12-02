@@ -5,16 +5,16 @@
 .about {
     p {
     width: 40%;
-    margin-bottom: 30px;
-    margin-left: 30px;
+    margin-bottom: em(30, 20);
+    margin-left: em(30, 20);
     }
     a {
-        margin-left: 30px;
+        margin-left: em(30, 20);
     }
 }
 
 .home-portfolio h3 {
-    margin: 20px 0 20px 25px;
+    margin: em(20, 30) 0 em(20, 30) em(25, 30);
 }
 
 .home-portfolio-wrapper {
@@ -25,9 +25,9 @@
 .home-portfolio-item {
     width: 30%;
     img {
-        height: 250px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        height: em(250);
+        border-top-left-radius: em(10);
+        border-top-right-radius: em(10);
     }
 
 }
@@ -35,34 +35,34 @@
 .home-portfolio-item-text {
     padding-left: 10%;
     padding-right: 10%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 1px 10px 0px $color-bg-footer;
+    border-bottom-left-radius: em(10);
+    border-bottom-right-radius: em(10);
+    box-shadow: 0px em(1) em(10) 0px $color-bg-footer;
     h4 {
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding-bottom: em(20, 20);
+        padding-top: em(20, 20);
     }
     a {
-        margin: 20px 0;
+        margin: em(20, 20) 0;
     }
 }
 
 
 .home-portfolio-footer {
-    margin-top: 100px;
-    height: 250px;
+    margin-top: em(100);
+    height: em(250);
     background: url(../img/sunset2.jpg) no-repeat fixed center;
     text-align: center;
-    padding: 50px;
+    padding: em(50);
     h3 {
         color: $color-bg-body;
     }
     a {
-        padding: 10px 48px;
-        margin: 20px 0;
+        padding: em(10, 20) em(48, 20);
+        margin: em(20, 20) 0;
         color: $color-bg-body;
         background-color: $color-primary;
-        border-radius: 5px;
+        border-radius: em(5, 20);
     }
 }
 
@@ -78,8 +78,8 @@
 .contact-content:first-child {
     color: $color-bg-body;
     background-color: $color-primary;
-    border-radius: 5px;
-    padding: 50px;
+    border-radius: em(5);
+    padding: em(50);
     width: 25%;
     a {
         color: $color-bg-body;
@@ -88,17 +88,17 @@
 }
 
 .contact-item h4 {
-    margin: 10px 0;
+    margin: em(10, 20) 0;
 }
 
 input, textarea {
     width: 100%;
     border: none;
-    box-shadow: 0px 2px 3px 0px lightgrey;
-    border-radius: 10px;
-    margin: 10px 0;
-    padding: 20px;
-    font-size: 20px;
+    box-shadow: 0px em(2, 20) em(3, 20) 0px $color-bg-footer;
+    border-radius: em(10, 20);
+    margin: em(10, 20) 0;
+    padding: em(20, 20);
+    font-size: em(20);
     font-family: $font-family;
 }
 
@@ -109,10 +109,10 @@ textarea:focus {
 
 .contact-form button {
         border: 1px solid $color-primary;
-        padding: 10px 48px;
-        border-radius: 5px;
+        padding: em(10, 20) em(48, 20);
+        border-radius: em(5, 20);
         color: $color-primary;
         background-color: $color-bg-body;
-        font-size: 20px;
+        font-size: em(20);
 }
 

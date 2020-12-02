@@ -4,40 +4,41 @@
 
 
 .products > .container > p {
-    margin-left: 50px;
+    margin-left: em(50, 20);
     width: 40%;
 }
 
 .products-wrapper {
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-left: em(50);
+    margin-top: em(40);
 }
 
 .products-item {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: em(50) 0;
     li {
+        font-size: em(20);
         display: block;
         position: relative;
-        margin-left: 20px;
+        margin-left: em(20);
     }
     li::before {
         content: "\2022";
         color: $color-primary;
-        margin-right: 10px;
-        font-size: 40px;
+        font-size: em(40);
+        margin-right: em(10, 40);        
         position: absolute;
-        top: -15px;
-        left: -20px;
+        top: em(-18, 40);
+        left: em(-20, 40);
     }
     a {
-        margin-top: 30px;
+        margin-top: em(30, 20);
     }
 }
 
 .products-item > p {
-    margin: 10px 0;
+    margin: em(10, 20) 0;
 }
 
 .products-item-text,
@@ -47,9 +48,9 @@
 }
 
 .products-item-text p {
-    margin: 10px 0;
+    margin: em(10, 20) 0;
 }
 
 .products-item-image img {
-    border-radius: 10px;
+    border-radius: em(10);
 }

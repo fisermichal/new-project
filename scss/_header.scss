@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 32px 0;
+    padding: em(32) 0;
 }
 
 .toggle-btn {
@@ -19,23 +19,23 @@
     label {
         cursor: pointer;
         text-indent: -9999px;
-        width: 52px;
-        height: 27px;
+        width: em(52);
+        height: em(27);
         background: $color-bg-footer;
         float: right;
-        border-radius: 100px;
+        border-radius: em(100);
         position: relative;
     }
     
     label:after {
         content: '';
         position: absolute;
-        top: 3px;
-        left: 3px;
-        width: 20px;
-        height: 20px;
+        top: em(3);
+        left: em(3);
+        width: em(20);
+        height: em(20);
         background-color: $color-bg-body;
-        border-radius: 90px;
+        border-radius: em(90);
         transition: 0.3s;
     }
     
@@ -49,22 +49,22 @@
     }
     
     label:active:after {
-        width: 45px;
+        width: em(45);
     }
 }
 
 .shop-btn {
     border: 1px solid $color-primary;
-    padding: 10px 48px;
-    border-radius: 5px;
+    padding: em(10, 20) em(48, 20);
+    border-radius: em(5, 20);
     color: $color-primary;
 }
 
 .header {
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../img/sunset1.jpg") no-repeat fixed center;
-    padding: 100px 0 300px 0;
+    padding: em(100) 0 em(300) 0;
     p {
-        margin-bottom: 20px;
+        margin-bottom: em(20);
         color: $color-bg-body;
     }
 }
@@ -72,13 +72,13 @@
 .header-shop {
     width: 40%;
     text-align: center;
-    margin: 0 auto 100px;
-    padding: 16px;
+    margin: 0 auto em(100);
+    padding: em(16);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 5px;
-    transform: translateY(-38px);
+    border-radius: em(5);
+    transform: translateY(em(-38));
     background-color: $color-primary;
     color: $color-bg-body;
     p {
@@ -86,7 +86,7 @@
         font-weight: bold;
     }
     a {
-        padding: 5px 20px;
+        padding: em(5, 20) em(20, 20);
         border: 1px solid $color-bg-body;
         color: $color-bg-body;
     }

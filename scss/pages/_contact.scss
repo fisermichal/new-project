@@ -4,12 +4,12 @@
 
 .contact-phone {
     h3 {
-        margin: 100px 0 50px 155px;
+        margin: em(100, 30) 0 em(50, 30) em(155, 30);
     }
     a {
-        margin-left: 200px;
+        margin-left: em(200, 70);
         font: {
-            size: 70px;
+            size: em(70);
             weight: bold;
         }
         color: $color-primary;
@@ -18,6 +18,6 @@
         content: url(../img/ctverec.png);
 	    position: absolute;
 	    z-index: -999;
-	    transform: translate(-22px, -13px);
+	    transform: translate(em(-22, 30), em(-13, 30));
     }
 }

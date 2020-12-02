@@ -5,33 +5,33 @@
 .portfolio {
     p {
         width: 50%;
-        margin: 20px 0 20px 50px;
+        margin: em(20, 20) 0 em(20, 20) em(50, 20);
     }
 }
 
 .portfolio-wrapper {
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: em(100);
+    margin-left: em(100);
 }
 
 .portfolio-item {
-    margin: 50px 0;
+    margin: em(50) 0;
     h3 {
-        margin-left: 30px;
+        margin-left: em(30, 30);
     }
 
     h3::before {
         content: url(../img/ctverec.png);
 	    position: absolute;
 	    z-index: -999;
-	    transform: translate(-22px, -13px);
+	    transform: translate(em(-22, 30), em(-13, 30));
     }
 }
 
 .portfolio-images {
-    margin-left: 45px;
+    margin-left: em(45);
     img {
-        border-radius: 10px;
-        margin: 0 5px;
+        border-radius: em(10);
+        margin: 0 em(5);
     }
 }

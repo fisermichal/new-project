@@ -10,13 +10,13 @@
     li {
         width: 35%;
         text-align: center;
-        padding: 70px;
-        margin: 10px;        
-        box-shadow: 0px 2px 3px 0px $color-bg-footer;
-        border-radius: 10px;
+        padding: em(70);
+        margin: em(10);        
+        box-shadow: 0px em(2) em(3) 0px $color-bg-footer;
+        border-radius: em(10);
     }
     p {
-        margin-top: 30px;
+        margin-top: em(30, 20);
     }
     .light {
         color: $color-primary;
@@ -36,7 +36,7 @@
 
 .standarts-wrapper > p {
     width: 40%;
-    margin-bottom: 50px;
+    margin-bottom: em(50, 20);
 }
 
 .standarts-wrapper {
@@ -44,17 +44,17 @@
     li {
         display: flex;
         align-items: center;
-        box-shadow: 0px 2px 3px 0px $color-bg-footer;
-        border-radius: 10px;
-        margin: 30px 0;
+        box-shadow: 0px em(2) em(3) 0px $color-bg-footer;
+        border-radius: em(10);
+        margin: em(30) 0;
     }
     svg {
-        margin: 10px 30px;
+        margin: em(10, 64) em(30, 64);
         color: $color-primary;
     }
     h4 {
         color: $color-primary;
-        margin-bottom: 10px;
+        margin-bottom: em(10, 20);
     }
 }
 

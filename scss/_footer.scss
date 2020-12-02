@@ -6,33 +6,33 @@
 .footer-wrapper {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: em(50);
 }
 
 .footer-item {
     width: 20%;
     li {
         display: block;
-        padding-bottom: 5px;
+        padding-bottom: em(5);
     }
     a {
         padding: 0;
     }
     h4 {
-        margin-bottom: 10px;
+        margin-bottom: em(10, 20);
     }
     svg {
-        margin-right: 5px;
+        margin-right: em(5);
     }
 }
 
 footer {
     background-color: $color-bg-footer;
     .map {
-        transform: translateY(-200px);
+        transform: translateY(em(-200));
     }
     .footer-wrapper {
-        margin-top: -150px;
-        padding-bottom: 100px;
+        margin-top: em(-150);
+        padding-bottom: em(50);
     }
 }

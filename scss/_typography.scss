@@ -8,26 +8,26 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size: 60px;
+	font-size: em(60);
 	color: $color-primary;
 }
 
 h2 {
-	font-size: 50px;	
-	margin: 50px 0;
+	font-size: em(50);	
+	margin: em(50, 50) 0;
 }
 
 h2::before {
 	content: url(../img/tecky.png);
 	position: absolute;
 	z-index: -999;
-	transform: translate(-20px, -15px);
+	transform: translate(em(-20, 50), em(-15, 50))
 }
 
 h3 {
-	font-size: 30px;
+	font-size: em(30);
 }
 
 h4 {
-	font-size: 20px;
+	font-size: em(20);
 }
