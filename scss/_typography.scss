@@ -18,7 +18,7 @@ h2 {
 }
 
 h2::before {
-	content: url(../img/tecky.png);
+	content: url(../img/dots.png);
 	position: absolute;
 	z-index: -999;
 	transform: translate(em(-20, 50), em(-15, 50))

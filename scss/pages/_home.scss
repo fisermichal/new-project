@@ -11,6 +11,18 @@
     a {
         margin-left: em(30, 20);
     }
+    .about-square {
+        background: {
+            image: url(../img/square_medium.png);
+            size: cover;
+        }
+        position: absolute;
+        right: 300px;
+        top: 850px;
+        width: 150px;
+        height: 150px;
+        transform: rotate(-25deg);
+    }
 }
 
 .home-portfolio h3 {
@@ -116,3 +128,16 @@ textarea:focus {
         font-size: em(20);
 }
 
+
+.contact .contact-square{
+    background: {
+        image: url(../img/square_medium.png);
+        size: cover;
+    }
+    position: absolute;
+    right: 100px;
+    top: 2650px;
+    width: 150px;
+    height: 150px;
+    transform: rotate(10deg);
+}

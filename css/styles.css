@@ -14,8 +14,9 @@ body {
   font-weight: normal; }
 
 .container {
-  max-width: 87.5em;
-  margin: 0 auto; }
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 0 5em; }
 
 .center {
   text-align: center; }
@@ -39,7 +40,7 @@ img {
   .menu li {
     display: inline-block; }
   .menu a {
-    padding: 0 0.8em; }
+    margin: 0 0.8em; }
 
 section {
   margin: 6.25em 0; }
@@ -56,7 +57,7 @@ h2 {
   margin: 1em 0; }
 
 h2::before {
-  content: url(../img/tecky.png);
+  content: url(../img/dots.png);
   position: absolute;
   z-index: -999;
   transform: translate(-0.4em, -0.3em); }
@@ -82,7 +83,7 @@ h4 {
   text-indent: -9999px;
   width: 3.25em;
   height: 1.6875em;
-  background: #a9a9a9;
+  background: #909090;
   float: right;
   border-radius: 6.25em;
   position: relative; }
@@ -111,7 +112,7 @@ h4 {
   color: #0097ef; }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/sunset1.jpg") no-repeat fixed center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sunset2.jpg") no-repeat fixed center;
   padding: 6.25em 0 18.75em 0; }
   .header p {
     margin-bottom: 1.25em;
@@ -148,16 +149,19 @@ h4 {
     display: block;
     padding-bottom: 0.3125em; }
   .footer-item a {
-    padding: 0; }
+    margin: 0; }
   .footer-item h4 {
     margin-bottom: 0.5em; }
   .footer-item svg {
     margin-right: 0.3125em; }
 
 footer {
-  background-color: #a9a9a9; }
+  background-color: #ececec; }
   footer .map {
     transform: translateY(-12.5em); }
+  footer iframe {
+    width: 100%;
+    height: 25em; }
   footer .footer-wrapper {
     margin-top: -9.375em;
     padding-bottom: 3.125em; }
@@ -168,6 +172,15 @@ footer {
   margin-left: 1.5em; }
 .about a {
   margin-left: 1.5em; }
+.about .about-square {
+  background-image: url(../img/square_medium.png);
+  background-size: cover;
+  position: absolute;
+  right: 300px;
+  top: 850px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-25deg); }
 
 .home-portfolio h3 {
   margin: 0.6666666667em 0 0.6666666667em 0.8333333333em; }
@@ -188,7 +201,7 @@ footer {
   padding-right: 10%;
   border-bottom-left-radius: 0.625em;
   border-bottom-right-radius: 0.625em;
-  box-shadow: 0px 0.0625em 0.625em 0px #a9a9a9; }
+  box-shadow: 0px 0.0625em 0.625em 0px #ececec; }
   .home-portfolio-item-text h4 {
     padding-bottom: 1em;
     padding-top: 1em; }
@@ -233,7 +246,7 @@ footer {
 input, textarea {
   width: 100%;
   border: none;
-  box-shadow: 0px 0.1em 0.15em 0px #a9a9a9;
+  box-shadow: 0px 0.1em 0.15em 0px #ececec;
   border-radius: 0.5em;
   margin: 0.5em 0;
   padding: 1em;
@@ -252,6 +265,16 @@ textarea:focus {
   background-color: #FCFCFC;
   font-size: 1.25em; }
 
+.contact .contact-square {
+  background-image: url(../img/square_medium.png);
+  background-size: cover;
+  position: absolute;
+  right: 100px;
+  top: 2650px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(10deg); }
+
 .what-we-do .menu {
   text-align: center; }
 .what-we-do li {
@@ -259,7 +282,7 @@ textarea:focus {
   text-align: center;
   padding: 4.375em;
   margin: 0.625em;
-  box-shadow: 0px 0.125em 0.1875em 0px #a9a9a9;
+  box-shadow: 0px 0.125em 0.1875em 0px #ececec;
   border-radius: 0.625em; }
 .what-we-do p {
   margin-top: 1.5em; }
@@ -281,7 +304,7 @@ textarea:focus {
   .standarts-wrapper li {
     display: flex;
     align-items: center;
-    box-shadow: 0px 0.125em 0.1875em 0px #a9a9a9;
+    box-shadow: 0px 0.125em 0.1875em 0px #ececec;
     border-radius: 0.625em;
     margin: 1.875em 0; }
   .standarts-wrapper svg {
@@ -293,6 +316,26 @@ textarea:focus {
 
 .menu-text p {
   width: 100%; }
+
+.about-triangle {
+  background-image: url(../img/triangle.png);
+  background-size: cover;
+  position: absolute;
+  right: 300px;
+  top: 200px;
+  width: 200px;
+  height: 200px;
+  transform: rotate(-50deg); }
+
+.what-we-do-square {
+  background-image: url(../img/square_medium.png);
+  background-size: cover;
+  position: absolute;
+  right: 600px;
+  top: 950px;
+  width: 175px;
+  height: 175px;
+  transform: rotate(-30deg); }
 
 .portfolio p {
   width: 50%;
@@ -307,7 +350,7 @@ textarea:focus {
   .portfolio-item h3 {
     margin-left: 1em; }
   .portfolio-item h3::before {
-    content: url(../img/ctverec.png);
+    content: url(../img/square_small.png);
     position: absolute;
     z-index: -999;
     transform: translate(-0.7333333333em, -0.4333333333em); }
@@ -317,6 +360,16 @@ textarea:focus {
   .portfolio-images img {
     border-radius: 0.625em;
     margin: 0 0.3125em; }
+
+.portfolio-square {
+  background-image: url(../img/square_medium.png);
+  background-size: cover;
+  position: absolute;
+  right: 200px;
+  top: 650px;
+  width: 175px;
+  height: 175px;
+  transform: rotate(20deg); }
 
 .contact-phone h3 {
   margin: 3.3333333333em 0 1.6666666667em 5.1666666667em; }
@@ -330,6 +383,17 @@ textarea:focus {
   position: absolute;
   z-index: -999;
   transform: translate(-0.7333333333em, -0.4333333333em); }
+
+.contact-form-square {
+  background-image: url(../img/square_big.png);
+  background-size: cover;
+  position: absolute;
+  right: 180px;
+  top: 220px;
+  z-index: -999;
+  width: 300px;
+  height: 300px;
+  transform: rotate(-40deg); }
 
 .products > .container > p {
   margin-left: 2.5em;

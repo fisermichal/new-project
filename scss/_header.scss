@@ -21,7 +21,7 @@
         text-indent: -9999px;
         width: em(52);
         height: em(27);
-        background: $color-bg-footer;
+        background: #909090;
         float: right;
         border-radius: em(100);
         position: relative;
@@ -61,7 +61,7 @@
 }
 
 .header {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../img/sunset1.jpg") no-repeat fixed center;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/sunset2.jpg") no-repeat fixed center;
     padding: em(100) 0 em(300) 0;
     p {
         margin-bottom: em(20);

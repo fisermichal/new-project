@@ -24,8 +24,9 @@ body {
 }
 
 .container {
-    max-width: em(1400);
+    max-width: em(1280); //1400
     margin: 0 auto;
+    padding: 0 em(80);
 }
 
 .center {
@@ -55,7 +56,7 @@ img {
         display: inline-block;
     }
     a {
-        padding: 0 em(16, 20);
+        margin: 0 em(16, 20);
     }
 }
 
