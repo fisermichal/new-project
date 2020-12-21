@@ -10,7 +10,7 @@
 }
 
 .footer-item {
-    width: 20%;
+    width: em(250);
     li {
         display: block;
         padding-bottom: em(5);
@@ -23,6 +23,9 @@
     }
     svg {
         margin-right: em(5);
+    }
+    p {
+        display: inline-block;
     }
 }
 
@@ -38,5 +41,18 @@ footer {
     .footer-wrapper {
         margin-top: em(-150);
         padding-bottom: em(50);
+    }
+
+    @media ( max-width: $width-lg ) {
+        & .map {
+            transform: translateY(em(-130));
+        }
+        & iframe {
+            height: 15em;
+        }
+        & .footer-wrapper {
+            margin-top: em(-100);
+            font-size: 90%;
+        }
     }
 }

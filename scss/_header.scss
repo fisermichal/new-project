@@ -7,6 +7,29 @@
     justify-content: space-around;
     align-items: center;
     padding: em(32) 0;
+
+    .hamburger {
+        display: none;
+    }
+
+    @media ( max-width: $width-xmd ) {
+        & {
+            justify-content: space-between;
+            margin: 0 em(40);
+        }
+        & nav {
+            display: none;
+        }
+        & .toggle-btn {
+            display: none;
+        }
+        & .shop-btn {
+            display: none;
+        }
+        & .hamburger {
+            display: block;
+        }
+    }
 }
 
 .toggle-btn {
@@ -67,10 +90,22 @@
         margin-bottom: em(20);
         color: $color-bg-body;
     }
+    @media ( max-width: $width-lg ) {
+        & {
+            font-size: 90%;
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            padding: em(50) 0 em(200) 0;
+        }
+    }
+
 }
 
 .header-shop {
-    width: 40%;
+    width: em(700);
     text-align: center;
     margin: 0 auto em(100);
     padding: em(16);
@@ -90,4 +125,24 @@
         border: 1px solid $color-bg-body;
         color: $color-bg-body;
     }
+
+    @media ( max-width: $width-lg ) {
+        & {
+            width: 550px;
+            display: block;
+            transform: translateY(em(-54));
+        }
+        & p {
+            margin-bottom: em(5);
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            width: 400px;
+            font-size: 80%;
+        }
+    }
+
+    
 }

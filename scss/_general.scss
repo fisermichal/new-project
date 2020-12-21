@@ -11,6 +11,10 @@
 
 main {
     margin-bottom: em(300);
+
+    @media ( max-width: $width-lg ) {
+        margin-bottom: em(200);
+    }
 }
 
 body {

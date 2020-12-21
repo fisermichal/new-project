@@ -3,6 +3,14 @@
 // ------------------------------------------------------ /
 
 
+.about {
+    @media ( max-width: $width-md ) {
+        font-size: 90%;
+    }
+}
+
+
+
 .what-we-do {
     .menu {
         text-align: center;
@@ -15,6 +23,8 @@
         box-shadow: 0px em(2) em(3) 0px $color-bg-footer;
         border-radius: em(10);
     }
+    
+
     p {
         margin-top: em(30, 20);
     }
@@ -26,6 +36,30 @@
         background-color: $color-primary;
         color: $color-bg-body;
     }
+
+    @media ( max-width: $width-xmd ) {
+        & li {
+            padding: em(50);
+            width: 40%;
+        }
+    } 
+
+    @media ( max-width: $width-md ) {
+        & li {
+            padding: em(50);
+            width: 80%;
+        }
+    }
+    
+    @media ( max-width: $width-sm ) {
+        & .menu {
+            font-size: 80%;
+        }
+        & li {
+            padding: em(20);
+            width: 100%;
+        }
+    } 
 }
 
 .standarts {
@@ -35,7 +69,7 @@
 }
 
 .standarts-wrapper > p {
-    width: 40%;
+    width: 100%;
     margin-bottom: em(50, 20);
 }
 
@@ -55,6 +89,16 @@
     h4 {
         color: $color-primary;
         margin-bottom: em(10, 20);
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            font-size: 80%;
+        }
+        & svg {
+            width: 55px !important;
+            height: 50px !important;
+        }
     }
 }
 

@@ -7,11 +7,25 @@
         width: 50%;
         margin: em(20, 20) 0 em(20, 20) em(50, 20);
     }
+
+    @media ( max-width: $width-lg ) {
+        & p {
+            width: 80%;
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            font-size: 80%;
+        }
+    }
 }
 
 .portfolio-wrapper {
     margin-top: em(100);
     margin-left: em(100);
+
+    
 }
 
 .portfolio-item {
@@ -32,8 +46,23 @@
     margin-left: em(45);
     img {
         border-radius: em(10);
-        margin: 0 em(5);
+        margin: 0 em(5) em(10) em(5);
     }
+
+    @media ( max-width: $width-lg ) {
+        & img {
+            width: 25% !important;
+            height: 175px !important;
+        }
+    }
+
+    @media ( max-width: $width-xmd ) {
+        & img {
+            width: 45% !important;
+        }
+    }
+
+    
 }
 
 .portfolio-square {

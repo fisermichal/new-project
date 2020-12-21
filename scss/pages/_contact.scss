@@ -20,6 +20,32 @@
 	    z-index: -999;
 	    transform: translate(em(-22, 30), em(-13, 30));
     }
+
+    @media ( max-width: $width-lg ) {
+         & a {
+             font-size: em(60);
+            margin-left: em(120, 70);
+        }
+        & h3 {
+            margin-left: em(95, 30);
+        }
+    }
+
+    @media ( max-width: $width-xmd ) {
+        & a {
+            font-size: em(50);
+       }
+       
+       & h3 {
+        margin-left: em(85, 30);
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & a {
+            font-size: em(40);
+        }
+    }
 }
 
 .contact-form-square {
