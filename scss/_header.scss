@@ -1,0 +1,148 @@
+//
+//	HEADER
+// ------------------------------------------------------ /
+
+.header-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: em(32) 0;
+
+    .hamburger {
+        display: none;
+    }
+
+    @media ( max-width: $width-xmd ) {
+        & {
+            justify-content: space-between;
+            margin: 0 em(40);
+        }
+        & nav {
+            display: none;
+        }
+        & .toggle-btn {
+            display: none;
+        }
+        & .shop-btn {
+            display: none;
+        }
+        & .hamburger {
+            display: block;
+        }
+    }
+}
+
+.toggle-btn {
+    input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: em(52);
+        height: em(27);
+        background: #909090;
+        float: right;
+        border-radius: em(100);
+        position: relative;
+    }
+    
+    label:after {
+        content: '';
+        position: absolute;
+        top: em(3);
+        left: em(3);
+        width: em(20);
+        height: em(20);
+        background-color: $color-bg-body;
+        border-radius: em(90);
+        transition: 0.3s;
+    }
+    
+    input:checked + label {
+        background: $color-primary;
+    }
+    
+    input:checked + label:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+    
+    label:active:after {
+        width: em(45);
+    }
+}
+
+.shop-btn {
+    border: 1px solid $color-primary;
+    padding: em(10, 20) em(48, 20);
+    border-radius: em(5, 20);
+    color: $color-primary;
+}
+
+.header {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/sunset2.jpg") no-repeat fixed center;
+    padding: em(100) 0 em(300) 0;
+    p {
+        margin-bottom: em(20);
+        color: $color-bg-body;
+    }
+    @media ( max-width: $width-lg ) {
+        & {
+            font-size: 90%;
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            padding: em(50) 0 em(200) 0;
+        }
+    }
+
+}
+
+.header-shop {
+    width: em(700);
+    text-align: center;
+    margin: 0 auto em(100);
+    padding: em(16);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: em(5);
+    transform: translateY(em(-38));
+    background-color: $color-primary;
+    color: $color-bg-body;
+    p {
+        display: inline-block;
+        font-weight: bold;
+    }
+    a {
+        padding: em(5, 20) em(20, 20);
+        border: 1px solid $color-bg-body;
+        color: $color-bg-body;
+    }
+
+    @media ( max-width: $width-lg ) {
+        & {
+            width: 550px;
+            display: block;
+            transform: translateY(em(-54));
+        }
+        & p {
+            margin-bottom: em(5);
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            width: 400px;
+            font-size: 80%;
+        }
+    }
+
+    
+}

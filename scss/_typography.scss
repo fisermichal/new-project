@@ -1,0 +1,33 @@
+//
+//	TYPOGRAPHY
+// ------------------------------------------------------ /
+
+
+h1, h2, h3, h4 {
+	line-height: 1;
+}
+
+h1 {
+	font-size: em(55);
+	color: $color-primary;
+}
+
+h2 {
+	font-size: em(50);	
+	margin: em(50, 50) 0;
+}
+
+h2::before {
+	content: url(../img/dots.png);
+	position: absolute;
+	z-index: -999;
+	transform: translate(em(-20, 50), em(-15, 50))
+}
+
+h3 {
+	font-size: em(30);
+}
+
+h4 {
+	font-size: em(20);
+}

@@ -1,0 +1,63 @@
+//
+//	CONTACT
+// ------------------------------------------------------ /
+
+.contact-phone {
+    h3 {
+        margin: em(100, 30) 0 em(50, 30) em(155, 30);
+    }
+    a {
+        margin-left: em(200, 70);
+        font: {
+            size: em(70);
+            weight: bold;
+        }
+        color: $color-primary;
+    }
+    h3::before {
+        content: url(../img/ctverec.png);
+	    position: absolute;
+	    z-index: -999;
+	    transform: translate(em(-22, 30), em(-13, 30));
+    }
+
+    @media ( max-width: $width-lg ) {
+         & a {
+             font-size: em(60);
+            margin-left: em(120, 70);
+        }
+        & h3 {
+            margin-left: em(95, 30);
+        }
+    }
+
+    @media ( max-width: $width-xmd ) {
+        & a {
+            font-size: em(50);
+       }
+       
+       & h3 {
+        margin-left: em(85, 30);
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & a {
+            font-size: em(40);
+        }
+    }
+}
+
+.contact-form-square {
+    background: {
+        image: url(../img/square_big.png);
+        size: cover;
+    }
+    position: absolute;
+    right: 180px;
+    top: 220px;
+    z-index: -999;
+    width: 300px;
+    height: 300px;
+    transform: rotate(-40deg);
+}

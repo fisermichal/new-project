@@ -1,0 +1,200 @@
+//
+//	HOME
+// ------------------------------------------------------ /
+
+.about {
+    p {
+    width: 80%;
+    margin-bottom: em(30, 20);
+    margin-left: em(30, 20);
+    }
+    a {
+        margin-left: em(30, 20);
+    }
+    .about-square {
+        background: {
+            image: url(../img/square_medium.png);
+            size: cover;
+        }
+        position: absolute;
+        right: 300px;
+        top: 850px;
+        width: 150px;
+        height: 150px;
+        transform: rotate(-25deg);
+    }
+
+    @media ( max-width: $width-xmd ) {
+        & p {
+            width: 100%;
+        }
+    }
+}
+
+.home-portfolio h3 {
+    margin: em(20, 30) 0 em(20, 30) em(25, 30);
+}
+
+.home-portfolio-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    @media ( max-width: $width-xlg ) {
+        & {
+            display: block;
+        }
+    }
+}
+
+.home-portfolio-item {
+    width: 30%;
+    img {
+        height: em(250);
+        border-top-left-radius: em(10);
+        border-top-right-radius: em(10);
+    }
+
+    @media ( max-width: $width-xlg ) {
+        & {
+            width: 48%;
+            display: inline-block;
+        }
+    }
+
+    @media ( max-width: $width-lg ) {
+        & {
+            display: block;
+            margin: 0 auto 1em;
+            width: 70%;
+            font-size: 90%;
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            width: 100%;
+        }
+    }
+
+}
+
+.home-portfolio-item-text {
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom-left-radius: em(10);
+    border-bottom-right-radius: em(10);
+    box-shadow: 0px em(1) em(10) 0px $color-bg-footer;
+    h4 {
+        padding-bottom: em(20, 20);
+        padding-top: em(20, 20);
+    }
+    a {
+        margin: em(20, 20) 0;
+    }
+}
+
+
+.home-portfolio-footer {
+    margin-top: em(100);
+    height: em(250);
+    background: url(../img/sunset2.jpg) no-repeat fixed center;
+    text-align: center;
+    padding: em(50);
+    h3 {
+        color: $color-bg-body;
+    }
+    a {
+        padding: em(10, 20) em(48, 20);
+        margin: em(20, 20) 0;
+        color: $color-bg-body;
+        background-color: $color-primary;
+        border-radius: em(5, 20);
+    }
+
+    @media ( max-width: $width-lg ) {
+        & {
+            font-size: 80%;
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            font-size: 70%;
+        }
+    }
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    @media ( max-width: $width-lg ) {
+        & {
+            display: block;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.contact-content {
+    width: em(350);
+    display: block;  
+    
+    @media ( max-width: $width-lg ) {
+        margin: 0 auto 1em;
+    }
+}
+
+.contact-content:first-child {
+    color: $color-bg-body;
+    background-color: $color-primary;
+    border-radius: em(5);
+    padding: em(50);
+    a {
+        color: $color-bg-body;
+        display: block;
+    }
+}
+
+.contact-item h4 {
+    margin: em(10, 20) 0;
+}
+
+input, textarea {
+    width: 100%;
+    border: none;
+    box-shadow: 0px em(2, 20) em(3, 20) 0px $color-bg-footer;
+    border-radius: em(10, 20);
+    margin: em(10, 20) 0;
+    padding: em(20, 20);
+    font-size: em(20);
+    font-family: $font-family;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: $color-primary;
+}
+
+.contact-form button {
+        border: 1px solid $color-primary;
+        padding: em(10, 20) em(48, 20);
+        border-radius: em(5, 20);
+        color: $color-primary;
+        background-color: $color-bg-body;
+        font-size: em(20);
+}
+
+
+.contact .contact-square{
+    background: {
+        image: url(../img/square_medium.png);
+        size: cover;
+    }
+    position: absolute;
+    right: 100px;
+    top: 2650px;
+    width: 150px;
+    height: 150px;
+    transform: rotate(10deg);
+}

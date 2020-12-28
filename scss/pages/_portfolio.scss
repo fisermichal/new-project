@@ -1,0 +1,79 @@
+//
+//	PORTFOLIO
+// ------------------------------------------------------ /
+
+.portfolio {
+    p {
+        width: 50%;
+        margin: em(20, 20) 0 em(20, 20) em(50, 20);
+    }
+
+    @media ( max-width: $width-lg ) {
+        & p {
+            width: 80%;
+        }
+    }
+
+    @media ( max-width: $width-md ) {
+        & {
+            font-size: 80%;
+        }
+    }
+}
+
+.portfolio-wrapper {
+    margin-top: em(100);
+    margin-left: em(100);
+
+    
+}
+
+.portfolio-item {
+    margin: em(50) 0;
+    h3 {
+        margin-left: em(30, 30);
+    }
+
+    h3::before {
+        content: url(../img/square_small.png);
+	    position: absolute;
+	    z-index: -999;
+	    transform: translate(em(-22, 30), em(-13, 30));
+    }
+}
+
+.portfolio-images {
+    margin-left: em(45);
+    img {
+        border-radius: em(10);
+        margin: 0 em(5) em(10) em(5);
+    }
+
+    @media ( max-width: $width-lg ) {
+        & img {
+            width: 25% !important;
+            height: 175px !important;
+        }
+    }
+
+    @media ( max-width: $width-xmd ) {
+        & img {
+            width: 45% !important;
+        }
+    }
+
+    
+}
+
+.portfolio-square {
+    background: {
+        image: url(../img/square_medium.png);
+        size: cover;
+    }
+    position: absolute;
+    right: 200px;
+    top: 650px;
+    width: 175px;
+    height: 175px;
+    transform: rotate(20deg);
+}
