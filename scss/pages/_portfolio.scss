@@ -25,6 +25,11 @@
     margin-top: em(100);
     margin-left: em(100);
 
+    @media ( max-width: $width-xmd ) {
+        & {
+            margin-left: 0;
+        }
+    }
     
 }
 
