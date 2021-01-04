@@ -426,7 +426,13 @@ textarea:focus {
 @media (max-width: 640px) {
   .what-we-do li {
     padding: 3.125em;
-    width: 80%; } }
+    width: 80%; }
+  .what-we-do .menu li:nth-child(3) {
+    color: #0097ef;
+    background-color: #FCFCFC; }
+  .what-we-do .menu li:nth-child(4) {
+    color: #FCFCFC;
+    background-color: #0097ef; } }
 @media (max-width: 400px) {
   .what-we-do .menu {
     font-size: 80%; }
@@ -457,7 +463,8 @@ textarea:focus {
     margin-bottom: 0.5em; }
   @media (max-width: 640px) {
     .standarts-wrapper {
-      font-size: 80%; }
+      font-size: 80%;
+      margin-left: 0; }
     .standarts-wrapper svg {
       width: 55px !important;
       height: 50px !important; } }

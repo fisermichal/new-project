@@ -22,8 +22,7 @@
         margin: em(10);        
         box-shadow: 0px em(2) em(3) 0px $color-bg-footer;
         border-radius: em(10);
-    }
-    
+    } 
 
     p {
         margin-top: em(30, 20);
@@ -48,6 +47,16 @@
         & li {
             padding: em(50);
             width: 80%;
+        }
+
+        & .menu li:nth-child(3) {
+            color: $color-primary;
+            background-color: $color-bg-body;
+        }
+
+        & .menu li:nth-child(4) {
+            color: $color-bg-body;
+            background-color: $color-primary;
         }
     }
     
@@ -94,6 +103,7 @@
     @media ( max-width: $width-md ) {
         & {
             font-size: 80%;
+            margin-left: 0;
         }
         & svg {
             width: 55px !important;
