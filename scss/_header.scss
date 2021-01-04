@@ -84,7 +84,7 @@
 }
 
 .header {
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/sunset2.jpg") no-repeat fixed center;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/sunset2.jpg") no-repeat bottom right;
     padding: em(100) 0 em(300) 0;
     p {
         margin-bottom: em(20);
@@ -99,7 +99,14 @@
     @media ( max-width: $width-md ) {
         & {
             padding: em(50) 0 em(200) 0;
+            font-size: 70%;
+            background-position: center right;
         }
+    }
+    @media ( max-width: $width-sm ) {
+        & {
+            font-size: 60%;
+        }    
     }
 
 }
@@ -117,7 +124,7 @@
     background-color: $color-primary;
     color: $color-bg-body;
     p {
-        display: inline-block;
+        display: block;
         font-weight: bold;
     }
     a {
@@ -139,10 +146,14 @@
 
     @media ( max-width: $width-md ) {
         & {
-            width: 400px;
-            font-size: 80%;
+            width: 80%;
+            font-size: 70%;
         }
+        
     }
+
+    
+    
 
     
 }

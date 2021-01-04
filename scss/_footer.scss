@@ -27,6 +27,26 @@
     p {
         display: inline-block;
     }
+
+    &:last-child {
+        display: none;
+
+        @media ( max-width: $width-sm ) {
+            & {
+                display: block;
+                font-size: 90%;
+            }
+        }
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        @media ( max-width: $width-sm ) {
+            & {
+                display: none;
+            }
+        }
+    }
 }
 
 footer {
@@ -53,6 +73,12 @@ footer {
         & .footer-wrapper {
             margin-top: em(-100);
             font-size: 90%;
+        }
+    }
+
+    @media ( max-width: $width-xmd ) {
+        & .footer-wrapper {
+            font-size: 80%;
         }
     }
 }

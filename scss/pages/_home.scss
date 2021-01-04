@@ -26,13 +26,17 @@
 
     @media ( max-width: $width-xmd ) {
         & p {
-            width: 100%;
+            width: 90%;
         }
     }
 }
 
 .home-portfolio h3 {
     margin: em(20, 30) 0 em(20, 30) em(25, 30);
+    @media ( max-width: $width-sm ) {
+        margin: 0 0 em(15, 30) 0;
+        font-size: em(20);
+    }
 }
 
 .home-portfolio-wrapper {
@@ -122,6 +126,14 @@
             font-size: 70%;
         }
     }
+
+    @media ( max-width: $width-sm ) {
+        & h3 {
+            font-size: em(25);
+        }
+    }
+
+    
 }
 
 .contact-wrapper {
@@ -143,6 +155,14 @@
     @media ( max-width: $width-lg ) {
         margin: 0 auto 1em;
     }
+
+    @media ( max-width: $width-md ) {
+        width: em(280);
+    }
+
+    @media ( max-width: $width-sm ) {
+        font-size: 90%;
+    }
 }
 
 .contact-content:first-child {
@@ -153,6 +173,10 @@
     a {
         color: $color-bg-body;
         display: block;
+    }
+    
+    @media ( max-width: $width-sm ) {
+        padding: em(20);
     }
 }
 
