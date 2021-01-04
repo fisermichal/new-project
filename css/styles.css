@@ -201,13 +201,22 @@ h4 {
     margin-right: 0.3125em; }
   .footer-item p {
     display: inline-block; }
+  @media (max-width: 640px) {
+    .footer-item {
+      font-size: 90%; } }
+  @media (max-width: 400px) {
+    .footer-item {
+      font-size: 80%; } }
   .footer-item:last-child {
     display: none; }
-    @media (max-width: 400px) {
+    @media (max-width: 640px) {
       .footer-item:last-child {
         display: block;
         font-size: 90%; } }
-  @media (max-width: 400px) {
+    @media (max-width: 400px) {
+      .footer-item:last-child {
+        font-size: 80%; } }
+  @media (max-width: 640px) {
     .footer-item:nth-child(2), .footer-item:nth-child(3) {
       display: none; } }
 

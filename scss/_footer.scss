@@ -28,20 +28,32 @@
         display: inline-block;
     }
 
+    @media ( max-width: $width-md ) {
+        font-size: 90%;
+    }
+
+    @media ( max-width: $width-sm ) {
+        font-size: 80%;
+    }
+
     &:last-child {
         display: none;
 
-        @media ( max-width: $width-sm ) {
+        @media ( max-width: $width-md ) {
             & {
                 display: block;
                 font-size: 90%;
             }
         }
+
+        @media ( max-width: $width-sm ) {
+            font-size: 80%;
+        }
     }
 
     &:nth-child(2),
     &:nth-child(3) {
-        @media ( max-width: $width-sm ) {
+        @media ( max-width: $width-md ) {
             & {
                 display: none;
             }
