@@ -334,7 +334,7 @@ footer {
 .contact-wrapper {
   display: flex;
   justify-content: space-around; }
-  @media (max-width: 1024px) {
+  @media (max-width: 895px) {
     .contact-wrapper {
       display: block;
       margin-bottom: 1em; } }
@@ -550,7 +550,7 @@ textarea:focus {
   font-weight: bold;
   color: #0097ef; }
 .contact-phone h3::before {
-  content: url(../img/ctverec.png);
+  content: url(../img/dots.png);
   position: absolute;
   z-index: -999;
   transform: translate(-0.7333333333em, -0.4333333333em); }
@@ -567,7 +567,9 @@ textarea:focus {
     margin-left: 2.8333333333em; } }
 @media (max-width: 640px) {
   .contact-phone a {
-    font-size: 2.5em; } }
+    font-size: 1.875em; }
+  .contact-phone h3 {
+    margin: 2em 0 1em 2em; } }
 
 .contact-form-square {
   background-image: url(../img/square_big.png);

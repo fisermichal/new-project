@@ -140,7 +140,7 @@
     display: flex;
     justify-content: space-around;
 
-    @media ( max-width: $width-lg ) {
+    @media ( max-width: $width-xmd ) {
         & {
             display: block;
             margin-bottom: 1em;

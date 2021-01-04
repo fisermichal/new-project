@@ -15,7 +15,7 @@
         color: $color-primary;
     }
     h3::before {
-        content: url(../img/ctverec.png);
+        content: url(../img/dots.png);
 	    position: absolute;
 	    z-index: -999;
 	    transform: translate(em(-22, 30), em(-13, 30));
@@ -43,9 +43,13 @@
 
     @media ( max-width: $width-md ) {
         & a {
-            font-size: em(40);
+            font-size: em(30);
+        }
+        & h3 {
+            margin: 2em 0 1em 2em;
         }
     }
+    
 }
 
 .contact-form-square {
