@@ -6,6 +6,15 @@
 .products > .container > p {
     margin-left: em(50, 20);
     width: 60%;
+
+    @media ( max-width: $width-md ) {
+        & {
+            margin-left: 1.5em;
+            width: 90%;
+        }
+            
+        
+    }
 }
 
 .products-wrapper {
@@ -23,7 +32,7 @@
 .products-item {
     display: flex;
     justify-content: space-between;
-    margin: em(50) 0;
+    margin: em(50) 0; 
     li {
         font-size: em(20);
         display: block;
@@ -52,6 +61,15 @@
 .products-item-image {
     display: inline-block;
     width: 45%;
+}
+
+@media ( max-width: $width-md ) {
+    .products-item-image {
+        display: none;
+    }
+    .products-item-text {
+        width: 100%;
+    }
 }
 
 .products-item-text p {

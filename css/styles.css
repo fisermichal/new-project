@@ -585,6 +585,10 @@ textarea:focus {
 .products > .container > p {
   margin-left: 2.5em;
   width: 60%; }
+  @media (max-width: 640px) {
+    .products > .container > p {
+      margin-left: 1.5em;
+      width: 90%; } }
 
 .products-wrapper {
   margin-left: 3.125em;
@@ -624,6 +628,12 @@ textarea:focus {
   display: inline-block;
   width: 45%; }
 
+@media (max-width: 640px) {
+  .products-item-image {
+    display: none; }
+
+  .products-item-text {
+    width: 100%; } }
 .products-item-text p {
   margin: 0.5em 0; }
 
