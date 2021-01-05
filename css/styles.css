@@ -82,6 +82,16 @@ h4 {
   justify-content: space-around;
   align-items: center;
   padding: 2em 0; }
+  .header-navbar .menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0097ef;
+    transition: width .3s; }
+  .header-navbar .menu a:hover::after {
+    width: 100%;
+    transition: width .3s; }
   .header-navbar .hamburger {
     display: none; }
   @media (max-width: 895px) {
@@ -132,7 +142,12 @@ h4 {
   border: 1px solid #0097ef;
   padding: 0.5em 2.4em;
   border-radius: 0.25em;
-  color: #0097ef; }
+  color: #0097ef;
+  transition: ease-in-out .3s; }
+  .shop-btn:hover {
+    color: #FCFCFC;
+    background: #0097ef;
+    transition: ease-in-out .3s; }
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sunset2.webp") no-repeat bottom right;
@@ -170,7 +185,11 @@ h4 {
   .header-shop a {
     padding: 0.25em 1em;
     border: 1px solid #FCFCFC;
-    color: #FCFCFC; }
+    color: #FCFCFC;
+    transition: ease-in-out .3s; }
+    .header-shop a:hover {
+      border-radius: 10px;
+      transition: ease-in-out .3s; }
   @media (max-width: 1024px) {
     .header-shop {
       width: 550px;
@@ -320,7 +339,11 @@ footer {
     margin: 1em 0;
     color: #FCFCFC;
     background-color: #0097ef;
-    border-radius: 0.25em; }
+    border-radius: 0.25em;
+    transition: ease-in-out .3s; }
+    .home-portfolio-footer a:hover {
+      background-color: #0aa5ff;
+      transition: ease-in-out .3s; }
   @media (max-width: 1024px) {
     .home-portfolio-footer {
       font-size: 80%; } }

@@ -113,6 +113,11 @@
         color: $color-bg-body;
         background-color: $color-primary;
         border-radius: em(5, 20);
+        transition: ease-in-out .3s;
+        &:hover {
+            background-color: lighten($color-primary, 5%);
+            transition: ease-in-out .3s;
+        }
     }
 
     @media ( max-width: $width-lg ) {

@@ -8,6 +8,20 @@
     align-items: center;
     padding: em(32) 0;
 
+    .menu a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $color-primary;
+        transition: width .3s;
+    }
+
+    .menu a:hover::after {
+        width: 100%;
+        transition: width .3s;
+    }
+
 
     .hamburger {
         display: none;
@@ -85,6 +99,12 @@
     padding: em(10, 20) em(48, 20);
     border-radius: em(5, 20);
     color: $color-primary;
+    transition: ease-in-out .3s;
+    &:hover {
+        color: $color-bg-body;
+        background: $color-primary;
+        transition: ease-in-out .3s;
+    }
 }
 
 .header {
@@ -135,6 +155,11 @@
         padding: em(5, 20) em(20, 20);
         border: 1px solid $color-bg-body;
         color: $color-bg-body;
+        transition: ease-in-out .3s;
+        &:hover {
+            border-radius: 10px;
+            transition: ease-in-out .3s;
+        }
     }
 
     @media ( max-width: $width-lg ) {
