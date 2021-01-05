@@ -135,7 +135,7 @@ h4 {
   color: #0097ef; }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sunset2.jpg") no-repeat bottom right;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sunset2.webp") no-repeat bottom right;
   padding: 6.25em 0 18.75em 0; }
   .header p {
     margin-bottom: 1.25em;
@@ -310,7 +310,7 @@ footer {
 .home-portfolio-footer {
   margin-top: 6.25em;
   height: 15.625em;
-  background: url(../img/sunset2.jpg) no-repeat fixed center;
+  background: url(../img/sunset2.webp) no-repeat fixed center;
   text-align: center;
   padding: 3.125em; }
   .home-portfolio-footer h3 {
