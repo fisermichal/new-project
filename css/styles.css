@@ -205,7 +205,7 @@ h4 {
       background-position: center right; } }
   @media (max-width: 400px) {
     .header {
-      font-size: 60%; } }
+      font-size: 70%; } }
 
 .header-shop {
   width: 43.75em;
@@ -241,6 +241,9 @@ h4 {
     .header-shop {
       width: 80%;
       font-size: 70%; } }
+  @media (max-width: 367px) {
+    .header-shop {
+      transform: translateY(-4.5em); } }
 
 .footer-wrapper {
   display: flex;

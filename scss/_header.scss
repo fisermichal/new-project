@@ -199,7 +199,7 @@
     }
     @media ( max-width: $width-sm ) {
         & {
-            font-size: 60%;
+            font-size: 70%;
         }    
     }
 
@@ -248,8 +248,16 @@
             width: 80%;
             font-size: 70%;
         }
-        
     }
+
+    @media ( max-width: 367px ) {
+        & {
+            transform: translateY(em(-72));
+        }
+    }
+    
+        
+    
 
     
     
