@@ -92,20 +92,60 @@ h4 {
   .header-navbar .menu a:hover::after {
     width: 100%;
     transition: width .3s; }
+  .header-navbar .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    align-items: center;
+    list-style-type: none;
+    background: #0097ef;
+    z-index: 2;
+    clip-path: circle(50px at 110% -10%);
+    transition: ease-out 1s; }
+    .header-navbar .dropdown-menu a {
+      font-size: 4.375em;
+      font-weight: bold;
+      color: #FCFCFC; }
+      @media (max-width: 640px) {
+        .header-navbar .dropdown-menu a {
+          font-size: 3.125em; } }
+      @media (max-width: 640px) {
+        .header-navbar .dropdown-menu a {
+          font-size: 1.875em; } }
+    .header-navbar .dropdown-menu li {
+      opacity: 0; }
+    .header-navbar .dropdown-menu li:nth-child(1) {
+      transition: ease-out 0.5s 0.2s; }
+    .header-navbar .dropdown-menu li:nth-child(2) {
+      transition: ease-out 0.5s 0.2s; }
+    .header-navbar .dropdown-menu li:nth-child(3) {
+      transition: ease-out 0.5s 0.4s; }
+    .header-navbar .dropdown-menu li:nth-child(4) {
+      transition: ease-out 0.5s 0.6s; }
+    .header-navbar .dropdown-menu li:nth-child(5) {
+      transition: ease-out 0.5s 0.8s; }
   .header-navbar .hamburger {
-    display: none; }
+    display: none;
+    z-index: 3; }
   @media (max-width: 895px) {
     .header-navbar {
       justify-content: space-between;
       margin: 0 2.5em; }
-    .header-navbar nav {
-      display: none; }
-    .header-navbar .toggle-btn {
-      display: none; }
-    .header-navbar .shop-btn {
+    .header-navbar nav ul:first-child, .header-navbar .toggle-btn, .header-navbar .shop-btn {
       display: none; }
     .header-navbar .hamburger {
       display: block; } }
+
+.open {
+  clip-path: circle(1400px at 110% -10%) !important; }
+
+.fade {
+  opacity: 1 !important; }
 
 .toggle-btn input[type=checkbox] {
   height: 0;

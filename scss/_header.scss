@@ -22,9 +22,70 @@
         transition: width .3s;
     }
 
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        align-items: center;
+        list-style-type: none;
+        background: $color-primary;
+        z-index: 2;
+        clip-path: circle(50px at 110% -10%);
+        transition: ease-out 1s;
+        & a {
+            font: {
+                size: em(70);
+                weight: bold;
+            }
+            color: $color-bg-body;
+
+            @media ( max-width: $width-md ) {
+                & {
+                    font-size: em(50);
+                }
+            }
+
+            @media ( max-width: $width-md ) {
+                & {
+                    font-size: em(30);
+                }
+            }
+        }
+
+
+
+        & li {
+            opacity: 0;
+        }
+
+        & li:nth-child(1){
+            transition: ease-out 0.5s 0.2s;
+        }
+        & li:nth-child(2){
+            transition: ease-out 0.5s 0.2s;    
+        }
+        & li:nth-child(3){
+            transition: ease-out 0.5s 0.4s;
+        }
+        & li:nth-child(4){
+            transition: ease-out 0.5s 0.6s;
+        }
+        & li:nth-child(5){
+            transition: ease-out 0.5s 0.8s;
+        }
+    }
+
+    
+
 
     .hamburger {
         display: none;
+        z-index: 3;
     }
 
     @media ( max-width: $width-xmd ) {
@@ -32,23 +93,32 @@
             justify-content: space-between;
             margin: 0 em(40);
         }
-        & nav {
-            display: none;
-        }
-        & .toggle-btn {
-            display: none;
-        }
+        & nav ul:first-child,
+        & .toggle-btn,
         & .shop-btn {
             display: none;
-        }
+        } 
+
+
         & .hamburger {
             display: block;
+            
         }
     }
 
     
             
 }
+
+.open {
+    clip-path: circle(1400px at 110% -10%) !important;
+}
+
+.fade {
+    opacity: 1 !important;
+}
+
+
 
 .toggle-btn {
     input[type=checkbox]{
