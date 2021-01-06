@@ -3,11 +3,11 @@
 ### About Website
 
 I found a design and I wanted to improve my skills on it.  
-What I want to learn on my next project is to:
+What I want to improve on my next project is to:
 
 - write more **clean code**
 
-- give a **better structure** to whole project
+- give a **better structure** of whole project
 
 - use more **JavaScript (ES6)** which I'm still learning.
 
