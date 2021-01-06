@@ -28,13 +28,10 @@
         display: inline-block;
     }
 
-    @media ( max-width: $width-md ) {
+    /*@media ( max-width: $width-md ) {
         font-size: 90%;
-    }
+    }*/
 
-    @media ( max-width: $width-sm ) {
-        font-size: 85%;
-    }
 
     &:last-child {
         display: none;

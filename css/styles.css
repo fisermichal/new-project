@@ -251,7 +251,10 @@ h4 {
   margin-top: 3.125em; }
 
 .footer-item {
-  width: 15.625em; }
+  width: 15.625em;
+  /*@media ( max-width: $width-md ) {
+      font-size: 90%;
+  }*/ }
   .footer-item li {
     display: block;
     padding-bottom: 0.3125em; }
@@ -263,12 +266,6 @@ h4 {
     margin-right: 0.3125em; }
   .footer-item p {
     display: inline-block; }
-  @media (max-width: 640px) {
-    .footer-item {
-      font-size: 90%; } }
-  @media (max-width: 400px) {
-    .footer-item {
-      font-size: 85%; } }
   .footer-item:last-child {
     display: none; }
     @media (max-width: 640px) {
