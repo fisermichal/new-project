@@ -178,7 +178,7 @@
 }
 
 .header {
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/sunset2.webp") no-repeat bottom right;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/sunset_header.webp") no-repeat center;
     padding: em(100) 0 em(300) 0;
     p {
         margin-bottom: em(20);
@@ -194,7 +194,6 @@
         & {
             padding: em(50) 0 em(200) 0;
             font-size: 70%;
-            background-position: center right;
         }
     }
     @media ( max-width: $width-sm ) {

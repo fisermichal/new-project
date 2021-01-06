@@ -190,7 +190,7 @@ h4 {
     transition: ease-in-out .3s; }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sunset2.webp") no-repeat bottom right;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sunset_header.webp") no-repeat center;
   padding: 6.25em 0 18.75em 0; }
   .header p {
     margin-bottom: 1.25em;
@@ -201,8 +201,7 @@ h4 {
   @media (max-width: 640px) {
     .header {
       padding: 3.125em 0 12.5em 0;
-      font-size: 70%;
-      background-position: center right; } }
+      font-size: 70%; } }
   @media (max-width: 400px) {
     .header {
       font-size: 70%; } }
