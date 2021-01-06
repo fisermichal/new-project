@@ -588,11 +588,15 @@ textarea:focus {
     margin: 0 0.3125em 0.625em 0.3125em; }
   @media (max-width: 1024px) {
     .portfolio-images img {
-      width: 25% !important;
-      height: 175px !important; } }
-  @media (max-width: 895px) {
+      width: 40% !important; }
+    .portfolio-images img:last-child {
+      display: none; } }
+  @media (max-width: 640px) {
     .portfolio-images img {
-      width: 45% !important; } }
+      width: 90% !important;
+      height: 185px !important; }
+    .portfolio-images img:nth-child(2) {
+      display: none; } }
 
 .portfolio-square {
   background-image: url(../img/square_medium.png);

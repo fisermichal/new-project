@@ -55,15 +55,24 @@
     }
 
     @media ( max-width: $width-lg ) {
+
         & img {
-            width: 25% !important;
-            height: 175px !important;
+            width: 40% !important;
+        }
+
+        & img:last-child {
+            display: none;
         }
     }
 
-    @media ( max-width: $width-xmd ) {
+    @media ( max-width: $width-md ) {
         & img {
-            width: 45% !important;
+            width: 90% !important;
+            height: 185px !important;
+        }
+
+        & img:nth-child(2) {
+            display: none;
         }
     }
 
