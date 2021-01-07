@@ -21,7 +21,6 @@
         width: 100%;
         transition: width .3s;
     }
-
     
     .dropdown-menu {
         display: flex;
@@ -237,10 +236,11 @@
         padding: em(5, 20) em(20, 20);
         border: 1px solid $color-bg-body;
         color: $color-bg-body;
-        transition: ease-in-out .3s;
+        transform: scale(0.95);
+        transition: ease-in-out .2s;
         &:hover {
-            border-radius: 10px;
-            transition: ease-in-out .3s;
+            border-radius: 5px;
+            transform: scale(1);
         }
     }
 

@@ -235,10 +235,11 @@ h4 {
     padding: 0.25em 1em;
     border: 1px solid #FCFCFC;
     color: #FCFCFC;
-    transition: ease-in-out .3s; }
+    transform: scale(0.95);
+    transition: ease-in-out .2s; }
     .header-shop a:hover {
-      border-radius: 10px;
-      transition: ease-in-out .3s; }
+      border-radius: 5px;
+      transform: scale(1); }
   @media (max-width: 1024px) {
     .header-shop {
       width: 550px;
