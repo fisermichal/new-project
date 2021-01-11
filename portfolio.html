@@ -7,11 +7,12 @@
     <script defer="" src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" style="color: rgb(0, 0, 0);"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
+    <header data-aos="fade-down">
         <div class="header-navbar">
             <a href="index.html">
                 <img src="img/logo.png" style="width: 100px; height: 50px;" alt="logo">
@@ -66,48 +67,48 @@
        
         <section class="portfolio">
             <div class="container">
-                <h2>Portfolio</h2>
-                <p>
+                <h2 data-aos="fade-up" data-aos-delay="300">Portfolio</h2>
+                <p data-aos="fade-right" data-aos-delay="400">
                    Jelly beans gingerbread bear claw croissant muffin cupcake biscuit
                    muffin jelly-o. Chocolate cheesecake sweet. Dessert pudding chupa chups
                    sesame snaps chocolate bar muffin carrot cake ice cream. Candy danish
                    chocolate cake fruitcake topping macaroon lemon drops gingerbread.
                 </p>   
-                <p>
+                <p data-aos="fade-right" data-aos-delay="500">
                    Pudding sweet pudding sweet. Jelly beans powder tootsie roll cake sesame
                    snaps liquorice pie. Chocolate bar carrot cake donut sesame snaps biscuit.
                    Cookie chupa chups jelly-o candy sweet.
                 </p>
                 <div class="portfolio-wrapper">
                     <div class="portfolio-item">
-                        <h3>Lollipop pastry bear claw</h3>
-                        <p>Tiramisu carrot cake chocolate oat cake candy canes gummies tart
+                        <h3 data-aos="fade-up" data-aos-offset="300">Lollipop pastry bear claw</h3>
+                        <p data-aos="fade-right" data-aos-offset="300">Tiramisu carrot cake chocolate oat cake candy canes gummies tart
                            pastry fruitcake. Biscuit lemon drops oat cake carrot cake chocolate.
                            Lollipop pastry bear claw.
                         </p>
-                        <div class="portfolio-images">
+                        <div class="portfolio-images" data-aos="fade-up" data-aos-offset="300">
                             <img src="img/sunset1.webp" style="width: 30%; height: 250px" alt="">
                             <img src="img/sunset2.webp" style="width: 30%; height: 250px" alt="">
                             <img src="img/sunset3.webp" style="width: 30%; height: 250px" alt="">
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <h3>Sugar plum gummies</h3>
-                        <p>Danish pie bear claw oat cake. Dragée pie tiramisu toffee tart fruitcake
+                        <h3 data-aos="fade-up" data-aos-offset="300">Sugar plum gummies</h3>
+                        <p data-aos="fade-right" data-aos-offset="300">Danish pie bear claw oat cake. Dragée pie tiramisu toffee tart fruitcake
                            powder croissant liquorice. Ice cream dragée soufflé tootsie roll.
                         </p>
-                        <div class="portfolio-images">
+                        <div class="portfolio-images" data-aos="fade-up" data-aos-offset="300">
                             <img src="img/sunset2.webp" style="width: 30%; height: 250px" alt="">
                             <img src="img/sunset3.webp" style="width: 30%; height: 250px" alt="">
                             <img src="img/sunset1.webp" style="width: 30%; height: 250px" alt="">
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <h3>Bonbon pie soufflé</h3>
-                        <p>Marshmallow fruitcake chocolate cake soufflé wafer. Sugar plum soufflé
+                        <h3 data-aos="fade-up" data-aos-offset="300">Bonbon pie soufflé</h3>
+                        <p data-aos="fade-right" data-aos-offset="300">Marshmallow fruitcake chocolate cake soufflé wafer. Sugar plum soufflé
                            tiramisu danish dessert gummi bears sugar plum brownie.
                         </p>
-                        <div class="portfolio-images">
+                        <div class="portfolio-images" data-aos="fade-up" data-aos-offset="300">
                             <img src="img/sunset3.webp" style="width: 30%; height: 250px" alt="">
                             <img src="img/sunset1.webp" style="width: 30%; height: 250px" alt="">
                             <img src="img/sunset2.webp" style="width: 30%; height: 250px" alt="">
@@ -120,7 +121,7 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container" data-aos="flip-up">
             <div class="map">                    
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1657.5923247509204!2d-117.53977896950516!3d33.80754767627516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb8a29d6d709d%3A0xaee7e9128636f42d!2s4509%20Birdie%20Dr%2C%20Corona%2C%20CA%2092883%2C%20Spojen%C3%A9%20st%C3%A1ty%20americk%C3%A9!5e0!3m2!1scs!2scz!4v1606220750267!5m2!1scs!2scz" width="1400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
@@ -206,9 +207,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/app.js"></script>
     
 </body>
-
-<script src="js/app.js"></script>
 
 </html>

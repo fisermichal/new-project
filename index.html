@@ -8,11 +8,12 @@
     <script defer="" src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" style="color: rgb(0, 0, 0);"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>        
+    <header data-aos="fade-down">        
         <div class="header-navbar">
             <a href="index.html">
                 <img src="img/logo.png" style="width: 100px; height: 50px;" alt="logo">
@@ -68,8 +69,8 @@
         </div>    
             <div class="header">
                 <div class="container">
-                    <p>Cupcake ipsum dolor. Sit amet chocolate bar.</p>
-                    <h1>Pastry biscuit I love tiramisu.</h1>
+                    <p data-aos="fade-right" data-aos-delay="100">Cupcake ipsum dolor. Sit amet chocolate bar.</p>
+                    <h1 data-aos="fade-right" data-aos-delay="300">Pastry biscuit I love tiramisu.</h1>
                 </div>                
             </div>
             <div class="header-shop">
@@ -79,7 +80,7 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" data-aos="fade-up" data-aos-offset="300">
             <div class="container">
                 <h2>About us</h2>
                 <p>
@@ -95,51 +96,51 @@
 
         <section class="home-portfolio">
             <div class="container">
-                <h2>Portfolio</h2>
-                <h3>Our newest works</h3>            
+                <h2 data-aos="fade-up">Portfolio</h2>
+                <h3 data-aos="fade-up" data-aos-delay="200">Our newest works</h3>            
                 <div class="home-portfolio-wrapper">
-                    <div class="home-portfolio-item">
+                    <div class="home-portfolio-item" data-aos="fade-right" data-aos-offset="400">
                         <img src="img/sunset1.webp" alt="">
                         <div class="home-portfolio-item-text">
-                            <h4>QWERT</h4>
-                            <p>
+                            <h4 data-aos="fade-right" data-aos-delay="200">QWERT</h4>
+                            <p data-aos="fade-right" data-aos-delay="300">
                                 Gingerbread chocolate cake I love apple pie chupa chups jelly
                                 bonbon sweet. Chocolate sugar plum cake. Jelly beans halvah
                                 fruitcake powder oat cake I love gingerbread soufflé gummi bears.
                                 Candy powder cupcake carrot.
                             </p>
-                            <div class="center">
+                            <div class="center" data-aos="fade-up" data-aos-delay="400">
                                 <a class="shop-btn" href="">Show more</a>
                             </div>
                             
                         </div>
                         
                     </div>
-                    <div class="home-portfolio-item">
+                    <div class="home-portfolio-item" data-aos="fade-up" data-aos-offset="400">
                         <img src="img/sunset2.webp" alt="">
                         <div class="home-portfolio-item-text">
-                            <h4>ASDF</h4>
-                            <p>
+                            <h4 data-aos="fade-up" data-aos-delay="200">ASDF</h4>
+                            <p data-aos="fade-up" data-aos-delay="300">
                                 Cupcake ipsum dolor sit amet toffee. Jelly beans carrot cake candy
                                 canes pastry macaroon. Tiramisu gummi bears pastry toffee sweet roll
                                 pastry soufflé. Apple pie croissant candy powder cupcake carrot
                                 marshmallow cake halvah gummi bears.
                             </p>
-                            <div class="center">                                
+                            <div class="center" data-aos="fade-up" data-aos-delay="400">                                
                                 <a class="shop-btn" href="">Show more</a>
                             </div>
                         </div>                        
                     </div>
-                    <div class="home-portfolio-item">
+                    <div class="home-portfolio-item" data-aos="fade-left" data-aos-offset="400">
                         <img src="img/sunset3.webp" alt="">
                         <div class="home-portfolio-item-text">
-                            <h4>ZXCV</h4>
-                            <p>
+                            <h4 data-aos="fade-left" data-aos-delay="200">ZXCV</h4>
+                            <p data-aos="fade-left" data-aos-delay="300">
                                 Ice cream cheesecake powder wafer wafer lollipop tiramisu. Jelly
                                 caramels candy tart bonbon toffee. Marshmallow sugar plum chupa
                                 chups sesame snaps caramels sweet roll candy lemon drops macaroon.
                             </p>
-                            <div class="center">
+                            <div class="center" data-aos="fade-left" data-aos-delay="400">
                                 <a class="shop-btn" href="">Show more</a>
                             </div>                            
                         </div>                        
@@ -147,12 +148,12 @@
                 </div>
             </div>
             <div class="home-portfolio-footer">
-                <h3>Cupcake ipsum dolor sit amet jelly-o icing gingerbread gummies.</h3>
-                <a href="">Show whole portfolio</a>
+                <h3 data-aos="zoom-in" data-aos-offset="200">Cupcake ipsum dolor sit amet jelly-o icing gingerbread gummies.</h3>
+                <a data-aos="zoom-in" data-aos-offset="300" href="">Show whole portfolio</a>
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" data-aos="fade-up" data-aos-offset="400">
             <div class="container">
                 <h2>Contact</h2>
                 <div class="contact-wrapper">
@@ -190,7 +191,7 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container" data-aos="flip-up">
             <div class="map">                    
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1657.5923247509204!2d-117.53977896950516!3d33.80754767627516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb8a29d6d709d%3A0xaee7e9128636f42d!2s4509%20Birdie%20Dr%2C%20Corona%2C%20CA%2092883%2C%20Spojen%C3%A9%20st%C3%A1ty%20americk%C3%A9!5e0!3m2!1scs!2scz!4v1606220750267!5m2!1scs!2scz" width="1400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
@@ -276,9 +277,12 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/app.js"></script>
     
 </body>
 
-<script src="js/app.js"></script>
+
 
 </html>

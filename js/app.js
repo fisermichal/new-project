@@ -1,3 +1,10 @@
+// Run AOS
+
+AOS.init();
+
+
+// Dropdown menu
+
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".dropdown-menu");
 const links = document.querySelectorAll(".dropdown-menu li");
