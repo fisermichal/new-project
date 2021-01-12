@@ -2,12 +2,17 @@
 
 ### About Website
 
-I found a design and I wanted to improve my skills on it.  
+I found a design and I wanted to improve my skills on it.
+I'm still working on this, I want to add Dark mode and
+make animations using ES6, without AOS (animation on scroll library).  
+
+---
+
 What I want to improve on my next project is to:
 
 - write more **clean code**
 
-- give a **better structure** of whole project
+- give a **better structure** to whole project
 
 - use more **JavaScript (ES6)** which I'm still learning.
 
@@ -19,9 +24,9 @@ What I want to improve on my next project is to:
 
 - CSS3
 
-- SASS
+- SCSS
 
-- JavaScript
+- JavaScript (ES6, AOS)
 
 - Git
 
