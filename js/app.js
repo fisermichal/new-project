@@ -1,6 +1,8 @@
 // Run AOS
 
-AOS.init();
+AOS.init({
+    disable: mobile
+});
 
 
 // Dropdown menu
