@@ -40,7 +40,7 @@
     }
 
     h3::before {
-        content: url(../img/square_small.png);
+        content: url(../img/square_small.webp);
 	    position: absolute;
 	    z-index: -999;
 	    transform: translate(em(-22, 30), em(-13, 30));
@@ -49,6 +49,11 @@
 
 .portfolio-images {
     margin-left: em(45);
+
+    a {
+        display: inline;
+    }
+
     img {
         border-radius: em(10);
         margin: 0 em(5) em(10) em(5);
@@ -74,20 +79,5 @@
         & img:nth-child(2) {
             display: none;
         }
-    }
-
-    
-}
-
-.portfolio-square {
-    background: {
-        image: url(../img/square_medium.png);
-        size: cover;
-    }
-    position: absolute;
-    right: 200px;
-    top: 650px;
-    width: 175px;
-    height: 175px;
-    transform: rotate(20deg);
+    }    
 }

@@ -9,8 +9,6 @@
     }
 }
 
-
-
 .what-we-do {
     .menu {
         text-align: center;
@@ -116,30 +114,4 @@
     p {
         width: 100%;
     }
-}
-
-.about-triangle {
-    background: {
-        image: url(../img/triangle.png);
-        size: cover;
-    }
-    position: absolute;
-    right: 300px;
-    top: 200px;
-    width: 200px;
-    height: 200px;
-    transform: rotate(-50deg);
-}
-
-.what-we-do-square {
-    background: {
-        image: url(../img/square_medium.png);
-        size: cover;
-    }
-    position: absolute;
-    right: 600px;
-    top: 950px;
-    width: 175px;
-    height: 175px;
-    transform: rotate(-30deg);
 }

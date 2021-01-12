@@ -11,9 +11,7 @@
         & {
             margin-left: 1.5em;
             width: 90%;
-        }
-            
-        
+        } 
     }
 }
 
@@ -48,9 +46,6 @@
         top: em(-18, 40);
         left: em(-20, 40);
     }
-    a {
-        margin-top: em(30, 20);
-    }
 }
 
 .products-item > p {
@@ -72,11 +67,23 @@
     }
 }
 
-.products-item-text p {
-    margin: em(10, 20) 0;
+.products-item-text {
+    & p {
+        margin: em(10, 20) 0;        
+    }
+
+    & a {
+        margin-top: em(30, 20);
+    }
 }
 
-.products-item-image img {
-    border-radius: em(10);
-    margin: 5px;
+.products-item-image {
+    & img {
+        border-radius: em(10);
+        margin: 5px;
+    }
+
+    & a {
+        display: inline;
+    }
 }
