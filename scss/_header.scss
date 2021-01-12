@@ -130,7 +130,8 @@
     border-radius: em(5, 20);
     color: $color-primary;
     transition: ease-in-out .3s;
-    &:hover {
+    &:hover,
+    &.active {
         color: $color-bg-body;
         background: $color-primary;
         transition: ease-in-out .3s;

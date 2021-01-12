@@ -72,3 +72,42 @@ section {
     margin: em(100) 0;
 }
 
+// lightbox
+
+#lightbox {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: none;
+    animation: lightboxOn .3s;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 2s ease-in-out;
+    animation: lightboxOn .3s;
+}
+
+@keyframes lightboxOn {
+    from {
+        opacity: 0
+    }    
+    to {
+        opacity: 1
+    }
+}
+
+#lightbox img {
+    width: 50%;
+    height: 50%;
+    padding: 4px;
+    background: $color-secondary;
+    border: 2px solid $color-bg-body;
+    border-radius: 10px;
+}
+

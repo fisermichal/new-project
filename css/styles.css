@@ -51,6 +51,36 @@ img {
 section {
   margin: 6.25em 0; }
 
+#lightbox {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: none;
+  animation: lightboxOn .3s; }
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 2s ease-in-out;
+  animation: lightboxOn .3s; }
+
+@keyframes lightboxOn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+#lightbox img {
+  width: 50%;
+  height: 50%;
+  padding: 4px;
+  background: #000000;
+  border: 2px solid #FCFCFC;
+  border-radius: 10px; }
+
 h1, h2, h3, h4 {
   line-height: 1; }
 
@@ -158,7 +188,7 @@ h4 {
   border-radius: 0.25em;
   color: #0097ef;
   transition: ease-in-out .3s; }
-  .shop-btn:hover {
+  .shop-btn:hover, .shop-btn.active {
     color: #FCFCFC;
     background: #0097ef;
     transition: ease-in-out .3s; }
@@ -522,7 +552,8 @@ textarea:focus {
     display: inline; }
   .portfolio-images img {
     border-radius: 0.625em;
-    margin: 0 0.3125em 0.625em 0.3125em; }
+    margin: 0 0.3125em 0.625em 0.3125em;
+    cursor: pointer; }
   @media (max-width: 1024px) {
     .portfolio-images img {
       width: 40% !important; }
@@ -621,7 +652,8 @@ textarea:focus {
 
 .products-item-image img {
   border-radius: 0.625em;
-  margin: 5px; }
+  margin: 5px;
+  cursor: pointer; }
 .products-item-image a {
   display: inline; }
 
