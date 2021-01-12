@@ -2,8 +2,8 @@
 
 ### About Website
 
-I found a design and I wanted to improve my skills on it.
-I'm still working on this, I want to add Dark mode and
+I found a design and I wanted to improve my skills on it.  
+I'm still working on this, I want to add Dark mode and  
 make animations using ES6, without AOS (animation on scroll library).  
 
 ---
