@@ -103,11 +103,17 @@ section {
 }
 
 #lightbox img {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: auto;
     padding: 4px;
     background: $color-secondary;
     border: 2px solid $color-bg-body;
     border-radius: 10px;
+
+    @media ( max-width: $width-lg ) {
+        & {
+            width: 90%;
+        }
+    }
 }
 

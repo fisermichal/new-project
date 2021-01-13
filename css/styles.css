@@ -74,12 +74,15 @@ section {
   to {
     opacity: 1; } }
 #lightbox img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: auto;
   padding: 4px;
   background: #000000;
   border: 2px solid #FCFCFC;
   border-radius: 10px; }
+  @media (max-width: 1024px) {
+    #lightbox img {
+      width: 90%; } }
 
 h1, h2, h3, h4 {
   line-height: 1; }
@@ -149,6 +152,10 @@ h4 {
       @media (max-width: 640px) {
         .header-navbar .dropdown-menu a {
           font-size: 1.875em; } }
+    .header-navbar .dropdown-menu.open {
+      clip-path: circle(1400px at 110% -10%); }
+    .header-navbar .dropdown-menu li.fade {
+      opacity: 1; }
     .header-navbar .dropdown-menu li {
       opacity: 0; }
     .header-navbar .dropdown-menu li:nth-child(1) {
@@ -176,12 +183,6 @@ h4 {
 .active {
   color: #0097ef; }
 
-.open {
-  clip-path: circle(1400px at 110% -10%) !important; }
-
-.fade {
-  opacity: 1 !important; }
-
 .shop-btn {
   border: 1px solid #0097ef;
   padding: 0.5em 2.4em;
@@ -194,7 +195,7 @@ h4 {
     transition: ease-in-out .3s; }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/sunset_header.webp") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sunset_header.webp") no-repeat center;
   padding: 6.25em 0 18.75em 0; }
   .header p {
     margin-bottom: 1.25em;
